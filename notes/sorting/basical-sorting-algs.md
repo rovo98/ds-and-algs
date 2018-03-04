@@ -130,7 +130,7 @@ N-1-i 次比较，因此总共有 N 次交换以及 （N-1)+（N-2)+
 
 算法轨迹图示（from algs4)：
 
-![插入排序算法轨迹例子](G:\gameFile\md_images\bs_selectionSort_1.png)
+![插入排序算法轨迹例子](https://github.com/rovo98/ds-and-algs/blob/master/images/sorting/bs_selectionSort_1.png)
 
 算法实现:
 
@@ -176,7 +176,7 @@ public class Selection {
 
 插入排序算法轨迹图示（from algs4):
 
-![插入排序算法轨迹图例](G:\gameFile\md_images\bs_insertionSort_1.png)
+![插入排序算法轨迹图例](https://github.com/rovo98/ds-and-algs/blob/master/images/sorting/bs_insertionSort_1.png)
 
 算法实现:
 
@@ -273,7 +273,7 @@ public class Shell {
 
 算法轨迹图例 -- example (from algs4):
 
-![希尔排序算法轨迹图例](G:\gameFile\md_images\bs_shellSort_1.png)
+![希尔排序算法轨迹图例](https://github.com/rovo98/ds-and-algs/blob/master/images/sorting/bs_shellSort_1.png)
 
 **实际应用**: 对于中等大小的数组它的运行时间是可以接受的且它的代码量小，不需要额外的内存空间。*所以在面临一个排序问题而没有系统排序函数可用时，可先用希尔排序，然后再考虑是否将它替换为更加复杂的排序算法*。
 
