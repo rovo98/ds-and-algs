@@ -14,7 +14,7 @@ public class Bubble {
 
     /**
      * Exchange two elements in array at index {@code i} and {@code j}.
-     * @param a the array where need to be modify.
+     * @param a the array where need to be modified.
      * @param i the integer representing the index one.
      * @param j the integer representing another index.
      */
