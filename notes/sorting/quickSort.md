@@ -137,12 +137,12 @@ private staic void sort(Comparable[] a, int lo, int hi) {
 }
 // 三取样并将切分元素放在数组末尾
 private static void dealPivot(Comparable[] a, int lo, int hi) {
-	int mid = lo + (hi - lo) / 2;
+    int mid = lo + (hi - lo) / 2;
     if (less(a[mid], a[lo]))
     	exch(a, lo, mid);
     if (less(a[hi], a[lo]))
     	exch(a, lo, hi);
-	if (less(a[hi], a[mid]))
+    if (less(a[hi], a[mid]))
     	exch(a, mid, hi);
     // put the pivot to hi - 1 as a sentinel.
     exch(a, mid, hi - 1);
