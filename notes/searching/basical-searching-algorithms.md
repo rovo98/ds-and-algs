@@ -192,7 +192,7 @@ public static int interpolationSearch(Comparable[] a, Comparable key) {
 	int lo = 0;
     int hi = a.length - 1;
     
-    while (lo <= hi) {
+    while (lo <= hi && less(key, a[hi]) && less(a[lo], key)) {
     	int pos = lo + (hi - lo) * (key - a[lo]) / (a[hi] - a[lo]);
         if (a[pos].compareTo(key) == 0)
         	return pos;
