@@ -51,7 +51,7 @@ public class InterpolationSearch {
         int hi = arr.length - 1;
         // Since array is sorted, an element present
         // in array must be in range defined by corner
-        while (lo <= hi && key >= arr[lo] && key <= arr[hi]) {
+        while (lo <= hi && key > arr[lo] && key < arr[hi]) {
             // Probing the position with keeping uniform distribution in mind.
             int pos = lo + ((key - arr[lo]) * (hi - lo) / (arr[hi] - arr[lo]));
 
