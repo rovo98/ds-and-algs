@@ -155,11 +155,11 @@ private static void dealPivot(Comparable[] a, int lo, int hi) {
 
 [solution] : **一个简单想法是将数组切分为三个部分，分别为小于、等于和大于切分元素的数组元素**。
 
-DIjkstra 解法 ： 从左到右遍历数组一次，维护一个指针 lt 使得a[lo .. lt-1]中的元素都小于v, 一个 gt 使得a[gt+1 .. hi]中的元素都大于v, 一个指针 i 使得a[lt .. i-1]中的元素都等于v, a[i .. gt]中的元素都未确定。
+DIjkstra 解法 ： 从左到右遍历数组一次，维护一个指针 ```lt``` 使得```a[lo .. lt-1]```中的元素都小于```v```, 一个 ```gt``` 使得```a[gt+1 .. hi]```中的元素都大于```v```, 一个指针 ```i``` 使得```a[lt .. i-1]```中的元素都等于```v```, ```a[i .. gt]```中的元素都未确定。
 
-- a[i] 小于 v, 将a[lt]和a[i]交换，将lt 和 i加一；
-- a[i] 大于 v, 将a[gt]和a[i]交换， 将gt减一；
-- a[i] 等于 v, i++.
+- ```a[i]``` 小于 ```v```, 将```a[lt]```和```a[i]```交换，将```lt``` 和 ```i```加一；
+- ```a[i]``` 大于 ```v```, 将```a[gt]```和```a[i]```交换， 将```gt```减一；
+- ```a[i]``` 等于 ```v```, ```i++.```
 
 熵最优排序抽象实现： [详细查看](https://github.com/rovo98/ds-and-algs/blob/master/ds/sorting/exercises/Quick3Ways.java)
 
