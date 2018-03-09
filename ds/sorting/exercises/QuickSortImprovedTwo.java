@@ -46,15 +46,15 @@ public class QuickSortImprovedTwo {
             return;
         }
         dealPivot(a, lo, hi);
-        int pivot = hi - 1; // the sentinel for this range.
+        Comparable v = a[hi - 1]; // the sentinel for this range.
         int i = lo;
         int j = hi - 1;
 
         while (true) {
-            while (less(a[++i], a[pivot])) {
+            while (less(a[++i], v)) {
                 if (i == hi) break;      // redundant since a[hi - 1] is sentinel.
             }
-            while (j > lo && less(a[pivot], a[--j])) {
+            while (j > lo && less(v, a[--j])) {
 
             }
             if (i >= j) {
@@ -62,8 +62,8 @@ public class QuickSortImprovedTwo {
             }
             exch(a, i, j);
         }
-        if (i < hi) {
-            exch(a, i, pivot);
+        if (i < hi-1) {
+            exch(a, i, hi-1);
         }
         sort(a, lo, i-1);
         sort(a, i+1, hi);
