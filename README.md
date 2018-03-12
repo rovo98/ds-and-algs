@@ -20,7 +20,7 @@ description: datastructures and algorithms learing with java implement.
     - [Basical Searching Algorithms](https://github.com/rovo98/ds-and-algs#basical-searching-algorithms)
 - [Sorting Algorithms](https://github.com/rovo98/ds-and-algs#sorting-algorithms)
     - [Basical Sorting Algorithms](https://github.com/rovo98/ds-and-algs#basical-sorting-algorithms)
-    - [Some Improvement](https://github.com/rovo98/ds-and-algs#some-improvements)
+    - [Some Improvements](https://github.com/rovo98/ds-and-algs#some-improvements)
 
 ## Bag
 
