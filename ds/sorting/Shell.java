@@ -30,7 +30,7 @@ public class Shell {
     }
 
     /**
-     * ShellSor the unsorted array.
+     * ShellSort the unsorted array.
      * @param a the array where need to be sorted.
      */
     public static void sort(Comparable[] a) {
