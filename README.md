@@ -7,20 +7,20 @@ description: datastructures and algorithms learing with java implement.
 
 ## Table of contents
 
-- [Bag](https://github.com/rovo98/ds-and-algs/edit/master/README.md#Bag)
-- [List](https://github.com/rovo98/ds-and-algs/edit/master/README.md#List)
-    - [DoubleList](https://github.com/rovo98/ds-and-algs/edit/master/README.md#DoubleList)
-- [Stack](https://github.com/rovo98/ds-and-algs/edit/master/README.md#Stack)
-- [Queue](https://github.com/rovo98/ds-and-algs/edit/master/README.md#Queue)
-    - [Deque](https://github.com/rovo98/ds-and-algs/edit/master/README.md#Deque)
-    - [Steque](https://github.com/rovo98/ds-and-algs/edit/master/README.md#Steque)
-    - [Priority-Queue](https://github.com/rovo98/ds-and-algs/edit/master/README.md#Priority-Queue)
-- [UF](https://github.com/rovo98/ds-and-algs/edit/master/README.md#UF)
-- [Searching-Algorithms](https://github.com/rovo98/ds-and-algs/edit/master/README.md#Search-Algorithms)
-    - [Basical-Searching-Algorithms](https://github.com/rovo98/ds-and-algs/edit/master/README.md#Basical-Search-Algorithms)
-- [Sorting-Algorithms](https://github.com/rovo98/ds-and-algs/edit/master/README.md#Sorting-Algorithms)
-    - [Basical-Sorting-Algorithms](https://github.com/rovo98/ds-and-algs/edit/master/README.md#Basical-Sorting-Algorithms)
-    - [Some-Improvement](https://github.com/rovo98/ds-and-algs/edit/master/README.md#Some-Improvement)
+- [Bag](https://github.com/rovo98/ds-and-algs#bag)
+- [List](https://github.com/rovo98/ds-and-algs#list)
+    - [DoubleList](https://github.com/rovo98/ds-and-algs#doublelist)
+- [Stack](https://github.com/rovo98/ds-and-algs#stack)
+- [Queue](https://github.com/rovo98/ds-and-algs#queue)
+    - [Deque](https://github.com/rovo98/ds-and-algs#deque)
+    - [Steque](https://github.com/rovo98/ds-and-algs#steque)
+    - [Priority Queue](https://github.com/rovo98/ds-and-algs#priority-queue)
+- [UF](https://github.com/rovo98/ds-and-algs#uf)
+- [Searching Algorithms](https://github.com/rovo98/ds-and-algs#searching-algorithms)
+    - [Basical Searching Algorithms](https://github.com/rovo98/ds-and-algs#basical-searching-algorithms)
+- [Sorting Algorithms](https://github.com/rovo98/ds-and-algs#sorting-algorithms)
+    - [Basical Sorting Algorithms](https://github.com/rovo98/ds-and-algs#basical-sorting-algorithms)
+    - [Some Improvement](https://github.com/rovo98/ds-and-algs#some-improvement)
 
 ## Bag
 
@@ -207,9 +207,9 @@ description: datastructures and algorithms learing with java implement.
 |[QuickUnionUF](https://github.com/rovo98/ds-and-algs/blob/master/ds/uf/exercises/QuickUnionUF.java)|An implement of UF having quick union method.|
 |[WeightedUF](https://github.com/rovo98/ds-and-algs/blob/master/ds/uf/exercises/WeightedQuickUnion.java)|An implement of UF using number of nodes of tree for ranking and path halving.|
 
-## Searching-Algorithms
+## Searching Algorithms
 
-### Basical-Searching-Algorithms
+### Basical Searching Algorithms
 
 |Name|Time complexity|Space complexity|
 |:---:|:------------:|:--------------:|
@@ -220,9 +220,9 @@ description: datastructures and algorithms learing with java implement.
 |[InterpolationSearch](https://github.com/rovo98/ds-and-algs/blob/master/ds/searching/InterpolationSearch.java)|bc: O(log log n),wc: O(n)|O(1)|
 |[TernarySearch](https://github.com/rovo98/ds-and-algs/blob/master/ds/searching/TernarySearch.java)|O(log_3 n)|O(1)|
 
-## Sorting-Algorithms
+## Sorting Algorithms
 
-### Basical-Sorting-Algorithms
+### Basical Sorting Algorithms
 
 |Name|Time complexity|Space complexity|Stablility|
 |:---:|:------------:|:---------------:|:--------:|
@@ -233,7 +233,7 @@ description: datastructures and algorithms learing with java implement.
 |[MergeSort](https://github.com/rovo98/ds-and-algs/blob/master/ds/sorting/Merge.java)|O(n log n)|O(n)|stable|
 |[QuickSort](https://github.com/rovo98/ds-and-algs/blob/master/ds/sorting/Quick.java)|O(n log n)|O(1)|unstable|
 
-### Some-Improvements
+### Some Improvements
 
 |Name|Description|
 |:---:|:-----------:|
