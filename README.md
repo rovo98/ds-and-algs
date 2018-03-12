@@ -40,7 +40,7 @@ description: datastructures and algorithms learing with java implement.
 |[ArrayBag](https://github.com/rovo98/ds-and-algs/blob/master/ds/bag/ArrayBag.java)|An implement of Bag using ResizingArray.|
 |[LinkedBag](https://github.com/rovo98/ds-and-algs/blob/master/ds/bag/LinkedBag.java)|An implement of Bag using linked-list.|
 
-## List
+## List -- [go back to top](https://github.com/rovo98/ds-and-algs#datastructures-and-algorithms)
 
 ### API : [details](https://github.com/rovo98/ds-and-algs/blob/master/ds/list/datastructures/List.java)
 
@@ -62,7 +62,7 @@ description: datastructures and algorithms learing with java implement.
 |[ArrayList](https://github.com/rovo98/ds-and-algs/blob/master/ds/list/datastructures/ArrayList.java)|An implement of List using ResizingArray.|
 |[LinkedList](https://github.com/rovo98/ds-and-algs/blob/master/ds/list/datastructures/LinkedList.java)|An implement of List using single-linked-list.|
 
-### DoubleList
+### DoubleList -- [go back to top](https://github.com/rovo98/ds-and-algs#datastructures-and-algorithms)
 
 #### API :
 
@@ -83,7 +83,7 @@ description: datastructures and algorithms learing with java implement.
 |:---:|:--------:|
 |[DoubleNode](https://github.com/rovo98/ds-and-algs/blob/master/ds/list/exercises/DoubleNode.java)|An implement of DoubleList.|
 
-## Stack
+## Stack -- [go back to top](https://github.com/rovo98/ds-and-algs#datastructures-and-algorithms)
 
 ### API : [details](https://github.com/rovo98/ds-and-algs/blob/master/ds/stack/datastructures/Stack.java)
 
@@ -103,7 +103,7 @@ description: datastructures and algorithms learing with java implement.
 |[ArrayStack](https://github.com/rovo98/ds-and-algs/blob/master/ds/stack/datastructures/ArrayStack.java)|An implement of Stack using ResizingArray.|
 |[LinkedStack](https://github.com/rovo98/ds-and-algs/blob/master/ds/stack/datastructures/LinkedStack.java)|An implement of Stack using single-linked-list.|
 
-## Queue
+## Queue -- [go back to top](https://github.com/rovo98/ds-and-algs#datastructures-and-algorithms)
 
 ### API : [details](https://github.com/rovo98/ds-and-algs/blob/master/ds/queue/datastructures/Queue.java)
 
@@ -122,7 +122,7 @@ description: datastructures and algorithms learing with java implement.
 |:---:|:---------:|
 |[LinkedQueue](https://github.com/rovo98/ds-and-algs/blob/master/ds/queue/datastructures/LinkedQueue.java)|An implement of Queue using single-linked-list.|
 
-### Deque
+### Deque -- [go back to top](https://github.com/rovo98/ds-and-algs#datastructures-and-algorithms)
 
 #### API : [details](https://github.com/rovo98/ds-and-algs/blob/master/ds/queue/exercises/Deque.java)
 
@@ -142,7 +142,7 @@ description: datastructures and algorithms learing with java implement.
 |:---:|:---------:|
 |[LinkedDeque](https://github.com/rovo98/ds-and-algs/blob/master/ds/queue/exercises/LinkedDeque.java)|An implement of Deque using double-linked-list.|
 
-### Steque
+### Steque -- [go back to top](https://github.com/rovo98/ds-and-algs#datastructures-and-algorithms)
 
 #### API : [details](https://github.com/rovo98/ds-and-algs/blob/master/ds/queue/exercises/Steque.java)
 
@@ -161,7 +161,7 @@ description: datastructures and algorithms learing with java implement.
 |:----:|:--------:|
 |[LinkedSteque](https://github.com/rovo98/ds-and-algs/blob/master/ds/queue/exercises/LinkedSteque.java)|An implement of Steque using single-linked-list.|
 
-### Priority Queue
+### Priority Queue -- [go back to top](https://github.com/rovo98/ds-and-algs#datastructures-and-algorithms)
 
 #### basical implements - using ResizingArray and linked-list.
 
@@ -186,7 +186,7 @@ description: datastructures and algorithms learing with java implement.
 |[LinkedPQWithNoOrder](https://github.com/rovo98/ds-and-algs/blob/master/ds/queue/exercises/priority-queue/LinkedPQWithNoOrder.java)|An implement of MaxPQ using single-linked-list which doesn't requires its keys to be sorted.|
 |[LinkedPQWithOrder](https://github.com/rovo98/ds-and-algs/blob/master/ds/queue/exercises/priority-queue/LinkedPQWithOrder.java)|An implement of MaxPQ using single-linked-list which requires its keys to be sorted.|
 
-## UF
+## UF -- [go back to top](https://github.com/rovo98/ds-and-algs#datastructures-and-algorithms)
 
 ### API : [details](https://github.com/rovo98/ds-and-algs/blob/master/ds/uf/datastructures/UF_API.java)
 
@@ -207,7 +207,7 @@ description: datastructures and algorithms learing with java implement.
 |[QuickUnionUF](https://github.com/rovo98/ds-and-algs/blob/master/ds/uf/exercises/QuickUnionUF.java)|An implement of UF having quick union method.|
 |[WeightedUF](https://github.com/rovo98/ds-and-algs/blob/master/ds/uf/exercises/WeightedQuickUnion.java)|An implement of UF using number of nodes of tree for ranking and path halving.|
 
-## Searching Algorithms
+## Searching Algorithms -- [go back to top](https://github.com/rovo98/ds-and-algs#datastructures-and-algorithms)
 
 ### Basical Searching Algorithms
 
@@ -220,7 +220,7 @@ description: datastructures and algorithms learing with java implement.
 |[InterpolationSearch](https://github.com/rovo98/ds-and-algs/blob/master/ds/searching/InterpolationSearch.java)|bc: O(log log n),wc: O(n)|O(1)|
 |[TernarySearch](https://github.com/rovo98/ds-and-algs/blob/master/ds/searching/TernarySearch.java)|O(log_3 n)|O(1)|
 
-## Sorting Algorithms
+## Sorting Algorithms -- [go back to top](https://github.com/rovo98/ds-and-algs#datastructures-and-algorithms)
 
 ### Basical Sorting Algorithms
 
