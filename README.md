@@ -16,7 +16,7 @@ description: datastructures and algorithms learing with java implement.
     - [Steque](https://github.com/rovo98/ds-and-algs#steque----go-back-to-top)
     - [Priority Queue](https://github.com/rovo98/ds-and-algs#priority-queue----go-back-to-top)
 - [UF](https://github.com/rovo98/ds-and-algs#uf----go-back-to-top)
-- [Searching Algorithms](https://github.com/rovo98/ds-and-algs#searching-algorithms)
+- [Searching Algorithms](https://github.com/rovo98/ds-and-algs#searching-algorithms----go-back-to-top)
     - [Basical Searching Algorithms](https://github.com/rovo98/ds-and-algs#basical-searching-algorithms)
 - [Sorting Algorithms](https://github.com/rovo98/ds-and-algs#sorting-algorithms----go-back-to-top)
     - [Basical Sorting Algorithms](https://github.com/rovo98/ds-and-algs#basical-sorting-algorithms)
