@@ -41,7 +41,7 @@ public static int linearSearch(Comparable[] a, Comparable key) {
 }
 ```
 
-### 跳跃查找 - jump search -- [go back to top]()
+### 跳跃查找 - jump search -- [go back to top](https://github.com/rovo98/ds-and-algs/blob/master/notes/searching/basical-searching-algorithms.md#基本查找算法---basical-searching-algorithms)
 
 特点：
 
