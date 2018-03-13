@@ -9,19 +9,19 @@ date: 7/3/2018
 ## Table of contents
 
 - [引入]()
-- [线性查找 - linear search]()
-- [跳跃查找 - jump search]()
-- [二分查找 - binary search]()
-- [三分查找 - ternary search]()
-- [指数查找 - exponential search]()
-- [插值查找 - interpolation search]()
+- [线性查找 - linear search](https://github.com/rovo98/ds-and-algs/blob/master/notes/searching/basical-searching-algorithms.md#线性查找---linear-search----go-back-to-top)
+- [跳跃查找 - jump search](https://github.com/rovo98/ds-and-algs/blob/master/notes/searching/basical-searching-algorithms.md#跳跃查找---jump-search----go-back-to-top)
+- [二分查找 - binary search](https://github.com/rovo98/ds-and-algs/blob/master/notes/searching/basical-searching-algorithms.md#二分查找---binary-search----go-back-to-top)
+- [三分查找 - ternary search](https://github.com/rovo98/ds-and-algs/blob/master/notes/searching/basical-searching-algorithms.md#三分查找---ternary-search----go-back-to-top)
+- [指数查找 - exponential search](https://github.com/rovo98/ds-and-algs/blob/master/notes/searching/basical-searching-algorithms.md#指数搜索---exponential-search----go-back-to-top)
+- [插值查找 - interpolation search](https://github.com/rovo98/ds-and-algs/blob/master/notes/searching/basical-searching-algorithms.md#插值搜索---interpolation-search----go-back-to-top)
 
 
 ### 引入
 
 基本查找算法，我们只谈**静态查找**的查找算法。
 
-### 线性查找 - linear search -- [go back to top]()
+### 线性查找 - linear search -- [go back to top](https://github.com/rovo98/ds-and-algs/blob/master/notes/searching/basical-searching-algorithms.md#基本查找算法---basical-searching-algorithms)
 
 特点： 
 
@@ -79,7 +79,7 @@ public static int jumpSearch(Comparable[] a, Comparable key) {
 }
 ```
 
-### 二分查找 - binary search -- [go back to top]()
+### 二分查找 - binary search -- [go back to top](https://github.com/rovo98/ds-and-algs/blob/master/notes/searching/basical-searching-algorithms.md#基本查找算法---basical-searching-algorithms)
 
 特点：
 
@@ -120,7 +120,7 @@ public static int binarySearchRecursion(Comparable[] a, Comparable key, int lo, 
 }
 ```
 
-### 三分查找 - ternary search -- [go back to top]()
+### 三分查找 - ternary search -- [go back to top](https://github.com/rovo98/ds-and-algs/blob/master/notes/searching/basical-searching-algorithms.md#基本查找算法---basical-searching-algorithms)
 
 特点：
 
@@ -162,7 +162,7 @@ public static int ternarySearch(Comparable[] a, Comparable key, int lo, int hi) 
 }
 ```
 
-### 指数搜索 - exponential search -- [go back to top]()
+### 指数搜索 - exponential search -- [go back to top](https://github.com/rovo98/ds-and-algs/blob/master/notes/searching/basical-searching-algorithms.md#基本查找算法---basical-searching-algorithms)
 
 特点：
 
@@ -187,7 +187,7 @@ public static int exponentialSearch(Comparable[] a, Comparable key) {
 }
 ```
 
-### 插值搜索 - interpolation search -- [go back to top]()
+### 插值搜索 - interpolation search -- [go back to top](https://github.com/rovo98/ds-and-algs/blob/master/notes/searching/basical-searching-algorithms.md#基本查找算法---basical-searching-algorithms)
 
 特点：
 
