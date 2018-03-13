@@ -8,7 +8,7 @@ date: 7/3/2018
 
 ## Table of contents
 
-- [引入]()
+- [引入](https://github.com/rovo98/ds-and-algs/blob/master/notes/searching/basical-searching-algorithms.md#引入)
 - [线性查找 - linear search](https://github.com/rovo98/ds-and-algs/blob/master/notes/searching/basical-searching-algorithms.md#线性查找---linear-search----go-back-to-top)
 - [跳跃查找 - jump search](https://github.com/rovo98/ds-and-algs/blob/master/notes/searching/basical-searching-algorithms.md#跳跃查找---jump-search----go-back-to-top)
 - [二分查找 - binary search](https://github.com/rovo98/ds-and-algs/blob/master/notes/searching/basical-searching-algorithms.md#二分查找---binary-search----go-back-to-top)
