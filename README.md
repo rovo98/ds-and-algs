@@ -222,7 +222,7 @@ description: datastructures and algorithms learing with java implement.
 
 ## Sorting Algorithms -- [go back to top](https://github.com/rovo98/ds-and-algs#datastructures-and-algorithms)
 
-### Basical Sorting Algorithms
+### Basical Sorting Algorithms - [notes](https://github.com/rovo98/ds-and-algs/blob/master/notes/searching/basical-searching-algorithms.md)
 
 |Name|Time complexity|Space complexity|Stablility|
 |:---:|:------------:|:---------------:|:--------:|
