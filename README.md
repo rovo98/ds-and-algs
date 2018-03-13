@@ -17,9 +17,9 @@ description: datastructures and algorithms learing with java implement.
     - [Priority Queue](https://github.com/rovo98/ds-and-algs#priority-queue----go-back-to-top)
 - [UF](https://github.com/rovo98/ds-and-algs#uf----go-back-to-top)
 - [Searching Algorithms](https://github.com/rovo98/ds-and-algs#searching-algorithms----go-back-to-top)
-    - [Basical Searching Algorithms](https://github.com/rovo98/ds-and-algs#basical-searching-algorithms)
+    - [Basical Searching Algorithms](https://github.com/rovo98/ds-and-algs#basical-searching-algorithms---notes)
 - [Sorting Algorithms](https://github.com/rovo98/ds-and-algs#sorting-algorithms----go-back-to-top)
-    - [Basical Sorting Algorithms](https://github.com/rovo98/ds-and-algs#basical-sorting-algorithms)
+    - [Basical Sorting Algorithms](https://github.com/rovo98/ds-and-algs#basical-sorting-algorithms---notes)
     - [Some Improvements](https://github.com/rovo98/ds-and-algs#some-improvements)
 
 ## Bag
@@ -209,7 +209,7 @@ description: datastructures and algorithms learing with java implement.
 
 ## Searching Algorithms -- [go back to top](https://github.com/rovo98/ds-and-algs#datastructures-and-algorithms)
 
-### Basical Searching Algorithms
+### Basical Searching Algorithms - [notes](https://github.com/rovo98/ds-and-algs/blob/master/notes/searching/basical-searching-algorithms.md)
 
 |Name|Time complexity|Space complexity|
 |:---:|:------------:|:--------------:|
@@ -222,7 +222,7 @@ description: datastructures and algorithms learing with java implement.
 
 ## Sorting Algorithms -- [go back to top](https://github.com/rovo98/ds-and-algs#datastructures-and-algorithms)
 
-### Basical Sorting Algorithms - [notes](https://github.com/rovo98/ds-and-algs/blob/master/notes/searching/basical-searching-algorithms.md)
+### Basical Sorting Algorithms
 
 |Name|Time complexity|Space complexity|Stablility|
 |:---:|:------------:|:---------------:|:--------:|
