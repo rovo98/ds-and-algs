@@ -222,7 +222,7 @@ description: datastructures and algorithms learing with java implement.
 
 ## Sorting Algorithms -- [go back to top](https://github.com/rovo98/ds-and-algs#datastructures-and-algorithms)
 
-### Basical Sorting Algorithms
+### Basical Sorting Algorithms - [notes](https://github.com/rovo98/ds-and-algs/blob/master/notes/sorting/basical-sorting-algs.md)
 
 |Name|Time complexity|Space complexity|Stablility|
 |:---:|:------------:|:---------------:|:--------:|
@@ -233,7 +233,7 @@ description: datastructures and algorithms learing with java implement.
 |[MergeSort](https://github.com/rovo98/ds-and-algs/blob/master/ds/sorting/Merge.java)|O(n log n)|O(n)|stable|
 |[QuickSort](https://github.com/rovo98/ds-and-algs/blob/master/ds/sorting/Quick.java)|O(n log n)|O(1)|unstable|
 
-### Some Improvements
+### Some Improvements - [notes for mergeSort](https://github.com/rovo98/ds-and-algs/blob/master/notes/sorting/mergeSort.md) - [notes for quickSort](https://github.com/rovo98/ds-and-algs/blob/master/notes/sorting/quickSort.md)
 
 |Name|Description|
 |:---:|:-----------:|
