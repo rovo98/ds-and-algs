@@ -6,7 +6,12 @@ date: 5/3/2018
 
 # MergeSort - 归并排序
 
-[TOC]
+## Table of contents
+
+- [引入]()
+- [原始归并的抽象方法]()
+- [自顶向下的归并排序]()
+- [自底向上的归并排序]()
 
 ### 引入
 
@@ -26,7 +31,7 @@ If hi > lo
 	4. Merge the two halves sorted in step 2 and 3;
 		Call merge(arr, aux, lo, mid, hi);
 ```
-### 原地归并的抽象方法
+### 原地归并的抽象方法 -- [go back to top]()
 
 要实现上述的归并方法 -- ```merge()```很简单，创建一个数组将需要归并的**原数组的两个部分**中的元素放到这个数组中，然后再归并按大小顺序放回原数组。
 >但是，这里我们要考虑一个问题，当我们用归并排序对一个比较大的数组进行排序时，我们需要进行很多次归并，因此在每一次归并时都创建一个新的数组来存储排序结果会带来问题。我们可以考虑只创建一个**辅助数组```aux[]```**, 在每一个归并时，将原数组需要归并的两个部分复制到```aux[]```中，再把归并结果放回原数组。
@@ -61,7 +66,7 @@ public static void merge(Comparable[] a, Comparable[] aux, int lo, int mid, int 
 
 ![原地归并抽象方法轨迹](https://github.com/rovo98/ds-and-algs/blob/master/images/sorting/mergeSort_merge.png)
 
-### 自顶向下的归并排序
+### 自顶向下的归并排序 -- [go back to top]()
 
 ```java
 public static void mergeSort(Comparable[] a) {
@@ -120,7 +125,7 @@ private static void sort(Comparable[] a, Comparable[] aux, int lo, int hi) {
 - 不将元素复制到辅助数组中。
 
 
-### 自底向上的归并排序
+### 自底向上的归并排序 -- [go back to top]()
 
 实现归并排序另外一种方法是**先归并那些微型数组， 然后再成对归并得到的子数组，直到将整个数组归并在一起**。
 
