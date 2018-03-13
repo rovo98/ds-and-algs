@@ -6,13 +6,22 @@ date: 7/3/2018
 
 # 基本查找算法 - basical searching algorithms
 
-[TOC]
+## Table of contents
+
+- [引入]()
+- [线性查找 - linear search]()
+- [跳跃查找 - jump search]()
+- [二分查找 - binary search]()
+- [三分查找 - ternary search]()
+- [指数查找 - exponential search]()
+- [插值查找 - interpolation search]()
+
 
 ### 引入
 
 基本查找算法，我们只谈**静态查找**的查找算法。
 
-### 线性查找 - linear search
+### 线性查找 - linear search -- [go back to top]()
 
 特点： 
 
@@ -32,7 +41,7 @@ public static int linearSearch(Comparable[] a, Comparable key) {
 }
 ```
 
-### 跳跃查找 - jump search
+### 跳跃查找 - jump search -- [go back to top]()
 
 特点：
 
@@ -70,7 +79,7 @@ public static int jumpSearch(Comparable[] a, Comparable key) {
 }
 ```
 
-### 二分查找 - binary search
+### 二分查找 - binary search -- [go back to top]()
 
 特点：
 
@@ -111,7 +120,7 @@ public static int binarySearchRecursion(Comparable[] a, Comparable key, int lo, 
 }
 ```
 
-### 三分查找 - ternary search
+### 三分查找 - ternary search -- [go back to top]()
 
 特点：
 
@@ -153,7 +162,7 @@ public static int ternarySearch(Comparable[] a, Comparable key, int lo, int hi) 
 }
 ```
 
-### 指数搜索 - exponential search
+### 指数搜索 - exponential search -- [go back to top]()
 
 特点：
 
@@ -178,7 +187,7 @@ public static int exponentialSearch(Comparable[] a, Comparable key) {
 }
 ```
 
-### 插值搜索 - interpolation search
+### 插值搜索 - interpolation search -- [go back to top]()
 
 特点：
 
