@@ -198,7 +198,7 @@ description: datastructures and algorithms learing with java implement.
 |void union(int p, int q)|Merges the component containing site p with the componnet containing site q.|
 |int count()|Returns the number of the components.|
 
-### Implements
+### Implements - [notes](https://github.com/rovo98/ds-and-algs/blob/master/notes/uf/union-find.md)
 
 |Name|Description|
 |:---:|:---------:|
