@@ -186,6 +186,22 @@ description: datastructures and algorithms learing with java implement.
 |[LinkedPQWithNoOrder](https://github.com/rovo98/ds-and-algs/blob/master/ds/queue/exercises/priority-queue/LinkedPQWithNoOrder.java)|An implement of MaxPQ using single-linked-list which doesn't requires its keys to be sorted.|
 |[LinkedPQWithOrder](https://github.com/rovo98/ds-and-algs/blob/master/ds/queue/exercises/priority-queue/LinkedPQWithOrder.java)|An implement of MaxPQ using single-linked-list which requires its keys to be sorted.|
 
+#### Implementation using heap
+
+|Name|Description|
+|:---:|:---------:|
+|[HeapMaxPQ](https://github.com/rovo98/ds-and-algs/blob/master/ds/queue/exercises/priority-queue/HeapMaxPQ.java)|An implementation of MaxPQ using heap to swim or sink after doing insert or delMax operation|
+
+#### Time complexity comparision
+|Name|insert()|delMax()|max()|
+|:---:|:----:|:------:|:-----:|
+|ArrayPQWithNoOrder|O(1)|O(n)|O(n)|
+|ArrayPQWithOrder|O(n)|O(1)|O(1)|
+|LinkedPQWithNoOrder|O(1)|O(n)|O(n)|
+|LinkedPQWithOrder|O(n)|O(1)|O(1)|
+|HeapMaxPQ|O(log n)|O(log n)|O(1)|
+
+
 ## UF -- [go back to top](https://github.com/rovo98/ds-and-algs#datastructures-and-algorithms)
 
 ### API : [details](https://github.com/rovo98/ds-and-algs/blob/master/ds/uf/datastructures/UF_API.java)
@@ -232,6 +248,7 @@ description: datastructures and algorithms learing with java implement.
 |[ShellSort](https://github.com/rovo98/ds-and-algs/blob/master/ds/sorting/Shell.java)|approximate to O(n log n)|O(1)|unstable|
 |[MergeSort](https://github.com/rovo98/ds-and-algs/blob/master/ds/sorting/Merge.java)|O(n log n)|O(n)|stable|
 |[QuickSort](https://github.com/rovo98/ds-and-algs/blob/master/ds/sorting/Quick.java)|O(n log n)|O(1)|unstable|
+|[HeapSort](https://github.com/rovo98/ds-and-algs/blob/master/ds/sorting/Heap.java)|O(n log n)|O(1)|unstable|
 
 ### Some Improvements - [notes for mergeSort](https://github.com/rovo98/ds-and-algs/blob/master/notes/sorting/mergeSort.md) - [notes for quickSort](https://github.com/rovo98/ds-and-algs/blob/master/notes/sorting/quickSort.md)
 
