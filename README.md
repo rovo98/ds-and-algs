@@ -7,24 +7,24 @@ description: datastructures and algorithms learing with java implement.
 
 ## Table of contents
 
-- [Bag](https://github.com/rovo98/ds-and-algs#bag)
-- [List](https://github.com/rovo98/ds-and-algs#list----go-back-to-top)
-    - [DoubleList](https://github.com/rovo98/ds-and-algs#doublelist----go-back-to-top)
-- [Stack](https://github.com/rovo98/ds-and-algs#stack----go-back-to-top)
-- [Queue](https://github.com/rovo98/ds-and-algs#queue----go-back-to-top)
-    - [Deque](https://github.com/rovo98/ds-and-algs#deque----go-back-to-top)
-    - [Steque](https://github.com/rovo98/ds-and-algs#steque----go-back-to-top)
-    - [Priority Queue](https://github.com/rovo98/ds-and-algs#priority-queue----go-back-to-top)
-- [UF](https://github.com/rovo98/ds-and-algs#uf----go-back-to-top)
-- [Searching Algorithms](https://github.com/rovo98/ds-and-algs#searching-algorithms----go-back-to-top)
-    - [Basical Searching Algorithms](https://github.com/rovo98/ds-and-algs#basical-searching-algorithms---notes)
-- [Sorting Algorithms](https://github.com/rovo98/ds-and-algs#sorting-algorithms----go-back-to-top)
-    - [Basical Sorting Algorithms](https://github.com/rovo98/ds-and-algs#basical-sorting-algorithms---notes)
-    - [Some Improvements](https://github.com/rovo98/ds-and-algs#some-improvements---notes-for-mergesort---notes-for-quicksort)
+- [Bag](https://gitee.com/rovo98/ds-and-algs#bag)
+- [List](https://gitee.com/rovo98/ds-and-algs#list----go-back-to-top)
+    - [DoubleList](https://gitee.com/rovo98/ds-and-algs#doublelist----go-back-to-top)
+- [Stack](https://gitee.com/rovo98/ds-and-algs#stack----go-back-to-top)
+- [Queue](https://gitee.com/rovo98/ds-and-algs#queue----go-back-to-top)
+    - [Deque](https://gitee.com/rovo98/ds-and-algs#deque----go-back-to-top)
+    - [Steque](https://gitee.com/rovo98/ds-and-algs#steque----go-back-to-top)
+    - [Priority Queue](https://gitee.com/rovo98/ds-and-algs#priority-queue----go-back-to-top)
+- [UF](https://gitee.com/rovo98/ds-and-algs#uf----go-back-to-top)
+- [Searching Algorithms](https://gitee.com/rovo98/ds-and-algs#searching-algorithms----go-back-to-top)
+    - [Basical Searching Algorithms](https://gitee.com/rovo98/ds-and-algs#basical-searching-algorithms---notes)
+- [Sorting Algorithms](https://gitee.com/rovo98/ds-and-algs#sorting-algorithms----go-back-to-top)
+    - [Basical Sorting Algorithms](https://gitee.com/rovo98/ds-and-algs#basical-sorting-algorithms---notes)
+    - [Some Improvements](https://gitee.com/rovo98/ds-and-algs#some-improvements---notes-for-mergesort---notes-for-quicksort)
 
 ## Bag
 
-### API : [details](https://github.com/rovo98/ds-and-algs/blob/master/ds/bag/Bag.java)
+### API : [details](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/bag/Bag.java)
 
 |Operation     |Description|
 |:-------------:|:---------:|
@@ -37,12 +37,12 @@ description: datastructures and algorithms learing with java implement.
 
 |Name|Description|
 |:---:|:---------:|
-|[ArrayBag](https://github.com/rovo98/ds-and-algs/blob/master/ds/bag/ArrayBag.java)|An implement of Bag using ResizingArray.|
-|[LinkedBag](https://github.com/rovo98/ds-and-algs/blob/master/ds/bag/LinkedBag.java)|An implement of Bag using linked-list.|
+|[ArrayBag](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/bag/ArrayBag.java)|An implement of Bag using ResizingArray.|
+|[LinkedBag](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/bag/LinkedBag.java)|An implement of Bag using linked-list.|
 
-## List -- [go back to top](https://github.com/rovo98/ds-and-algs#datastructures-and-algorithms)
+## List -- [go back to top](https://gitee.com/rovo98/ds-and-algs#datastructures-and-algorithms)
 
-### API : [details](https://github.com/rovo98/ds-and-algs/blob/master/ds/list/datastructures/List.java)
+### API : [details](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/list/datastructures/List.java)
 
 |Operation|Description|
 |:--------:|:---------:|
@@ -59,10 +59,10 @@ description: datastructures and algorithms learing with java implement.
 
 |Name|Description|
 |:---:|:-------:|
-|[ArrayList](https://github.com/rovo98/ds-and-algs/blob/master/ds/list/datastructures/ArrayList.java)|An implement of List using ResizingArray.|
-|[LinkedList](https://github.com/rovo98/ds-and-algs/blob/master/ds/list/datastructures/LinkedList.java)|An implement of List using single-linked-list.|
+|[ArrayList](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/list/datastructures/ArrayList.java)|An implement of List using ResizingArray.|
+|[LinkedList](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/list/datastructures/LinkedList.java)|An implement of List using single-linked-list.|
 
-### DoubleList -- [go back to top](https://github.com/rovo98/ds-and-algs#datastructures-and-algorithms)
+### DoubleList -- [go back to top](https://gitee.com/rovo98/ds-and-algs#datastructures-and-algorithms)
 
 #### API :
 
@@ -81,11 +81,11 @@ description: datastructures and algorithms learing with java implement.
 
 |Name|Description|
 |:---:|:--------:|
-|[DoubleNode](https://github.com/rovo98/ds-and-algs/blob/master/ds/list/exercises/DoubleNode.java)|An implement of DoubleList.|
+|[DoubleNode](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/list/exercises/DoubleNode.java)|An implement of DoubleList.|
 
-## Stack -- [go back to top](https://github.com/rovo98/ds-and-algs#datastructures-and-algorithms)
+## Stack -- [go back to top](https://gitee.com/rovo98/ds-and-algs#datastructures-and-algorithms)
 
-### API : [details](https://github.com/rovo98/ds-and-algs/blob/master/ds/stack/datastructures/Stack.java)
+### API : [details](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/stack/datastructures/Stack.java)
 
 |Operation|Description|
 |:-------:|:----------:|
@@ -100,12 +100,12 @@ description: datastructures and algorithms learing with java implement.
 
 |Name|Description|
 |:---:|:----------:|
-|[ArrayStack](https://github.com/rovo98/ds-and-algs/blob/master/ds/stack/datastructures/ArrayStack.java)|An implement of Stack using ResizingArray.|
-|[LinkedStack](https://github.com/rovo98/ds-and-algs/blob/master/ds/stack/datastructures/LinkedStack.java)|An implement of Stack using single-linked-list.|
+|[ArrayStack](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/stack/datastructures/ArrayStack.java)|An implement of Stack using ResizingArray.|
+|[LinkedStack](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/stack/datastructures/LinkedStack.java)|An implement of Stack using single-linked-list.|
 
-## Queue -- [go back to top](https://github.com/rovo98/ds-and-algs#datastructures-and-algorithms)
+## Queue -- [go back to top](https://gitee.com/rovo98/ds-and-algs#datastructures-and-algorithms)
 
-### API : [details](https://github.com/rovo98/ds-and-algs/blob/master/ds/queue/datastructures/Queue.java)
+### API : [details](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/queue/datastructures/Queue.java)
 
 |Operation|Description|
 |:--------:|:--------:|
@@ -120,11 +120,11 @@ description: datastructures and algorithms learing with java implement.
 
 |Name|Description|
 |:---:|:---------:|
-|[LinkedQueue](https://github.com/rovo98/ds-and-algs/blob/master/ds/queue/datastructures/LinkedQueue.java)|An implement of Queue using single-linked-list.|
+|[LinkedQueue](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/queue/datastructures/LinkedQueue.java)|An implement of Queue using single-linked-list.|
 
-### Deque -- [go back to top](https://github.com/rovo98/ds-and-algs#datastructures-and-algorithms)
+### Deque -- [go back to top](https://gitee.com/rovo98/ds-and-algs#datastructures-and-algorithms)
 
-#### API : [details](https://github.com/rovo98/ds-and-algs/blob/master/ds/queue/exercises/Deque.java)
+#### API : [details](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/queue/exercises/Deque.java)
 
 |Operation|Description|
 |:-------:|:---------:|
@@ -140,11 +140,11 @@ description: datastructures and algorithms learing with java implement.
 
 |Name|Description|
 |:---:|:---------:|
-|[LinkedDeque](https://github.com/rovo98/ds-and-algs/blob/master/ds/queue/exercises/LinkedDeque.java)|An implement of Deque using double-linked-list.|
+|[LinkedDeque](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/queue/exercises/LinkedDeque.java)|An implement of Deque using double-linked-list.|
 
-### Steque -- [go back to top](https://github.com/rovo98/ds-and-algs#datastructures-and-algorithms)
+### Steque -- [go back to top](https://gitee.com/rovo98/ds-and-algs#datastructures-and-algorithms)
 
-#### API : [details](https://github.com/rovo98/ds-and-algs/blob/master/ds/queue/exercises/Steque.java)
+#### API : [details](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/queue/exercises/Steque.java)
 
 |Operation|Description|
 |:-------:|:---------:|
@@ -159,13 +159,13 @@ description: datastructures and algorithms learing with java implement.
 
 |Name|Description|
 |:----:|:--------:|
-|[LinkedSteque](https://github.com/rovo98/ds-and-algs/blob/master/ds/queue/exercises/LinkedSteque.java)|An implement of Steque using single-linked-list.|
+|[LinkedSteque](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/queue/exercises/LinkedSteque.java)|An implement of Steque using single-linked-list.|
 
-### Priority Queue -- [go back to top](https://github.com/rovo98/ds-and-algs#datastructures-and-algorithms)
+### Priority Queue -- [go back to top](https://gitee.com/rovo98/ds-and-algs#datastructures-and-algorithms)
 
 #### basical implements - using ResizingArray and linked-list.
 
-##### API : [details](https://github.com/rovo98/ds-and-algs/blob/master/ds/queue/exercises/priority-queue/MaxPQ.java) (MaxPQ or MinPQ).
+##### API : [details](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/queue/exercises/priority-queue/MaxPQ.java) (MaxPQ or MinPQ).
 
 |Operation|Description|
 |:-------:|:---------:|
@@ -181,16 +181,16 @@ description: datastructures and algorithms learing with java implement.
 
 |Name|Description|
 |:---:|:--------:|
-|[ArrayPQWithNoOrder](https://github.com/rovo98/ds-and-algs/blob/master/ds/queue/exercises/priority-queue/ArrayPQWithNoOrder.java)|An implement of MaxPQ using ResizingArray which doesn't requires its keys to be sorted.|
-|[ArrayPQWithOrder](https://github.com/rovo98/ds-and-algs/blob/master/ds/queue/exercises/priority-queue/ArrayPQWithOrder.java)|An implement of MaxPQ using ResizingArray which requires its keys to be sorted.|
-|[LinkedPQWithNoOrder](https://github.com/rovo98/ds-and-algs/blob/master/ds/queue/exercises/priority-queue/LinkedPQWithNoOrder.java)|An implement of MaxPQ using single-linked-list which doesn't requires its keys to be sorted.|
-|[LinkedPQWithOrder](https://github.com/rovo98/ds-and-algs/blob/master/ds/queue/exercises/priority-queue/LinkedPQWithOrder.java)|An implement of MaxPQ using single-linked-list which requires its keys to be sorted.|
+|[ArrayPQWithNoOrder](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/queue/exercises/priority-queue/ArrayPQWithNoOrder.java)|An implement of MaxPQ using ResizingArray which doesn't requires its keys to be sorted.|
+|[ArrayPQWithOrder](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/queue/exercises/priority-queue/ArrayPQWithOrder.java)|An implement of MaxPQ using ResizingArray which requires its keys to be sorted.|
+|[LinkedPQWithNoOrder](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/queue/exercises/priority-queue/LinkedPQWithNoOrder.java)|An implement of MaxPQ using single-linked-list which doesn't requires its keys to be sorted.|
+|[LinkedPQWithOrder](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/queue/exercises/priority-queue/LinkedPQWithOrder.java)|An implement of MaxPQ using single-linked-list which requires its keys to be sorted.|
 
 #### Implementation using heap
 
 |Name|Description|
 |:---:|:---------:|
-|[HeapMaxPQ](https://github.com/rovo98/ds-and-algs/blob/master/ds/queue/exercises/priority-queue/HeapMaxPQ.java)|An implementation of MaxPQ using heap to swim or sink after doing insert or delMax operation|
+|[HeapMaxPQ](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/queue/exercises/priority-queue/HeapMaxPQ.java)|An implementation of MaxPQ using heap to swim or sink after doing insert or delMax operation|
 
 #### Time complexity comparision
 |Name|insert()|delMax()|max()|
@@ -202,9 +202,9 @@ description: datastructures and algorithms learing with java implement.
 |HeapMaxPQ|O(log n)|O(log n)|O(1)|
 
 
-## UF -- [go back to top](https://github.com/rovo98/ds-and-algs#datastructures-and-algorithms)
+## UF -- [go back to top](https://gitee.com/rovo98/ds-and-algs#datastructures-and-algorithms)
 
-### API : [details](https://github.com/rovo98/ds-and-algs/blob/master/ds/uf/datastructures/UF_API.java)
+### API : [details](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/uf/datastructures/UF_API.java)
 
 |Operation|Description|
 |:-------:|:---------:|
@@ -214,50 +214,50 @@ description: datastructures and algorithms learing with java implement.
 |void union(int p, int q)|Merges the component containing site p with the componnet containing site q.|
 |int count()|Returns the number of the components.|
 
-### Implements - [notes](https://github.com/rovo98/ds-and-algs/blob/master/notes/uf/union-find.md)
+### Implements - [notes](https://gitee.com/rovo98/ds-and-algs/tree/master/notes/uf/union-find.md)
 
 |Name|Description|
 |:---:|:---------:|
-|[UF](https://github.com/rovo98/ds-and-algs/blob/master/ds/uf/datastructures/UF.java)|An implement of UF using height of tree for ranking and path halving.|
-|[QuickFindUF](https://github.com/rovo98/ds-and-algs/blob/master/ds/uf/exercises/QuickFindUF.java)|An implement of UF having quick find method.|
-|[QuickUnionUF](https://github.com/rovo98/ds-and-algs/blob/master/ds/uf/exercises/QuickUnionUF.java)|An implement of UF having quick union method.|
-|[WeightedUF](https://github.com/rovo98/ds-and-algs/blob/master/ds/uf/exercises/WeightedQuickUnion.java)|An implement of UF using number of nodes of tree for ranking and path halving.|
+|[UF](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/uf/datastructures/UF.java)|An implement of UF using height of tree for ranking and path halving.|
+|[QuickFindUF](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/uf/exercises/QuickFindUF.java)|An implement of UF having quick find method.|
+|[QuickUnionUF](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/uf/exercises/QuickUnionUF.java)|An implement of UF having quick union method.|
+|[WeightedUF](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/uf/exercises/WeightedQuickUnion.java)|An implement of UF using number of nodes of tree for ranking and path halving.|
 
-## Searching Algorithms -- [go back to top](https://github.com/rovo98/ds-and-algs#datastructures-and-algorithms)
+## Searching Algorithms -- [go back to top](https://gitee.com/rovo98/ds-and-algs#datastructures-and-algorithms)
 
-### Basical Searching Algorithms - [notes](https://github.com/rovo98/ds-and-algs/blob/master/notes/searching/basical-searching-algorithms.md)
+### Basical Searching Algorithms - [notes](https://gitee.com/rovo98/ds-and-algs/tree/master/notes/searching/basical-searching-algorithms.md)
 
 |Name|Time complexity|Space complexity|
 |:---:|:------------:|:--------------:|
-|[LinearSearch](https://github.com/rovo98/ds-and-algs/blob/master/ds/searching/LinearSearch.java)|O(n)|O(1)|
-|[JumpSearch](https://github.com/rovo98/ds-and-algs/blob/master/ds/searching/JumpSearch.java)|O(\sqrt{n})|O(1)|
-|[BinarySearch](https://github.com/rovo98/ds-and-algs/blob/master/ds/searching/BinarySearch.java)|O(log n)|O(1)|
-|[ExponentialSearch](https://github.com/rovo98/ds-and-algs/blob/master/ds/searching/ExponentialSearch.java)|O(log n)|O(1)|
-|[InterpolationSearch](https://github.com/rovo98/ds-and-algs/blob/master/ds/searching/InterpolationSearch.java)|bc: O(log log n),wc: O(n)|O(1)|
-|[TernarySearch](https://github.com/rovo98/ds-and-algs/blob/master/ds/searching/TernarySearch.java)|O(log_3 n)|O(1)|
+|[LinearSearch](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/searching/LinearSearch.java)|O(n)|O(1)|
+|[JumpSearch](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/searching/JumpSearch.java)|O(\sqrt{n})|O(1)|
+|[BinarySearch](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/searching/BinarySearch.java)|O(log n)|O(1)|
+|[ExponentialSearch](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/searching/ExponentialSearch.java)|O(log n)|O(1)|
+|[InterpolationSearch](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/searching/InterpolationSearch.java)|bc: O(log log n),wc: O(n)|O(1)|
+|[TernarySearch](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/searching/TernarySearch.java)|O(log_3 n)|O(1)|
 
-## Sorting Algorithms -- [go back to top](https://github.com/rovo98/ds-and-algs#datastructures-and-algorithms)
+## Sorting Algorithms -- [go back to top](https://gitee.com/rovo98/ds-and-algs#datastructures-and-algorithms)
 
-### Basical Sorting Algorithms - [notes](https://github.com/rovo98/ds-and-algs/blob/master/notes/sorting/basical-sorting-algs.md)
+### Basical Sorting Algorithms - [notes](https://gitee.com/rovo98/ds-and-algs/tree/master/notes/sorting/basical-sorting-algs.md)
 
 |Name|Time complexity|Space complexity|Stablility|
 |:---:|:------------:|:---------------:|:--------:|
-|[BubbleSort](https://github.com/rovo98/ds-and-algs/blob/master/ds/sorting/Bubble.java)|O(n^2)|O(1)|stable|
-|[InsertionSort](https://github.com/rovo98/ds-and-algs/blob/master/ds/sorting/Insertion.java)|O(n^2)|O(1)|stable|
-|[SelectionSort](https://github.com/rovo98/ds-and-algs/blob/master/ds/sorting/Selection.java)|O(n^2)|O(1)|unstable|
-|[ShellSort](https://github.com/rovo98/ds-and-algs/blob/master/ds/sorting/Shell.java)|approximate to O(n log n)|O(1)|unstable|
-|[MergeSort](https://github.com/rovo98/ds-and-algs/blob/master/ds/sorting/Merge.java)|O(n log n)|O(n)|stable|
-|[QuickSort](https://github.com/rovo98/ds-and-algs/blob/master/ds/sorting/Quick.java)|O(n log n)|O(1)|unstable|
-|[HeapSort](https://github.com/rovo98/ds-and-algs/blob/master/ds/sorting/Heap.java)|O(n log n)|O(1)|unstable|
+|[BubbleSort](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/sorting/Bubble.java)|O(n^2)|O(1)|stable|
+|[InsertionSort](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/sorting/Insertion.java)|O(n^2)|O(1)|stable|
+|[SelectionSort](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/sorting/Selection.java)|O(n^2)|O(1)|unstable|
+|[ShellSort](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/sorting/Shell.java)|approximate to O(n log n)|O(1)|unstable|
+|[MergeSort](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/sorting/Merge.java)|O(n log n)|O(n)|stable|
+|[QuickSort](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/sorting/Quick.java)|O(n log n)|O(1)|unstable|
+|[HeapSort](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/sorting/Heap.java)|O(n log n)|O(1)|unstable|
 
-### Some Improvements - [notes for mergeSort](https://github.com/rovo98/ds-and-algs/blob/master/notes/sorting/mergeSort.md) - [notes for quickSort](https://github.com/rovo98/ds-and-algs/blob/master/notes/sorting/quickSort.md)
+### Some Improvements - [notes for mergeSort](https://gitee.com/rovo98/ds-and-algs/tree/master/notes/sorting/mergeSort.md) - [notes for quickSort](https://gitee.com/rovo98/ds-and-algs/tree/master/notes/sorting/quickSort.md)
 
 |Name|Description|
 |:---:|:-----------:|
-|[MergeSortImproved](https://github.com/rovo98/ds-and-algs/blob/master/ds/sorting/exercises/MergeSortImproved.java)|Using insertionSort to sort the small subarrays and check if subarray is sorted already.|
-|[QuickMerge](https://github.com/rovo98/ds-and-algs/blob/master/ds/sorting/exercises/QuickMerge.java)|An approach to speed up merging subarrays, but it's unstable.|
-|[Merge3Ways](https://github.com/rovo98/ds-and-algs/blob/master/ds/sorting/exercises/Merge3Ways.java)|MergeSort the unsorted array by dividing it into three parts and merging them recursively.|
-|[QuickSortImproved](https://github.com/rovo98/ds-and-algs/blob/master/ds/sorting/exercises/QuickSortImproved.java)|Using insertionSort to sort the small subarrays.|
-|[QuickSortImprovedTwo](https://github.com/rovo98/ds-and-algs/blob/master/ds/sorting/exercises/QuickSortImprovedTwo.java)|Sampling three points for picking a pivot.|
-|[Quick3Ways](https://github.com/rovo98/ds-and-algs/blob/master/ds/sorting/exercises/Quick3Ways.java)|QuickSort the unsorted array by dividing it into three halves. One's elements all less than pivot, second one equals to pivot and the last greater than pivot.|
+|[MergeSortImproved](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/sorting/exercises/MergeSortImproved.java)|Using insertionSort to sort the small subarrays and check if subarray is sorted already.|
+|[QuickMerge](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/sorting/exercises/QuickMerge.java)|An approach to speed up merging subarrays, but it's unstable.|
+|[Merge3Ways](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/sorting/exercises/Merge3Ways.java)|MergeSort the unsorted array by dividing it into three parts and merging them recursively.|
+|[QuickSortImproved](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/sorting/exercises/QuickSortImproved.java)|Using insertionSort to sort the small subarrays.|
+|[QuickSortImprovedTwo](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/sorting/exercises/QuickSortImprovedTwo.java)|Sampling three points for picking a pivot.|
+|[Quick3Ways](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/sorting/exercises/Quick3Ways.java)|QuickSort the unsorted array by dividing it into three halves. One's elements all less than pivot, second one equals to pivot and the last greater than pivot.|
 
