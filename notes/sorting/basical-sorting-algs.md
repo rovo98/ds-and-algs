@@ -7,22 +7,22 @@ description: notes, learning from algs4.
 
 ## Table of contents
 
-- [引入](https://gitee.com/rovo98/ds-and-algs/tree/master/notes/sorting/basical-sorting-algs.md#引入)
-	- [排序算法模板](https://gitee.com/rovo98/ds-and-algs/tree/master/notes/sorting/basical-sorting-algs.md#排序算法类模板----go-back-to-top)
-	- [验证](https://gitee.com/rovo98/ds-and-algs/tree/master/notes/sorting/basical-sorting-algs.md#验证)
-	- [运行时间](https://gitee.com/rovo98/ds-and-algs/tree/master/notes/sorting/basical-sorting-algs.md#运行时间----go-back-to-top)
-	- [额外的内存使用](https://gitee.com/rovo98/ds-and-algs/tree/master/notes/sorting/basical-sorting-algs.md#额外的内存使用)
-	- [数据类型](https://gitee.com/rovo98/ds-and-algs/tree/master/notes/sorting/basical-sorting-algs.md#数据类型)
-- [选择排序](https://gitee.com/rovo98/ds-and-algs/tree/master/notes/sorting/basical-sorting-algs.md#选择排序----go-back-to-top)
-- [插入排序](https://gitee.com/rovo98/ds-and-algs/tree/master/notes/sorting/basical-sorting-algs.md#插入排序----go-back-to-top)
-- [希尔排序](https://gitee.com/rovo98/ds-and-algs/tree/master/notes/sorting/basical-sorting-algs.md#希尔排序----go-back-to-top)
-- [冒泡排序](https://gitee.com/rovo98/ds-and-algs/tree/master/notes/sorting/basical-sorting-algs.md#附加--冒泡排序----go-back-to-top)
+- [引入](https://github.com/rovo98/ds-and-algs/blob/master/notes/sorting/basical-sorting-algs.md#引入)
+	- [排序算法模板](https://github.com/rovo98/ds-and-algs/blob/master/notes/sorting/basical-sorting-algs.md#排序算法类模板----go-back-to-top)
+	- [验证](https://github.com/rovo98/ds-and-algs/blob/master/notes/sorting/basical-sorting-algs.md#验证)
+	- [运行时间](https://github.com/rovo98/ds-and-algs/blob/master/notes/sorting/basical-sorting-algs.md#运行时间----go-back-to-top)
+	- [额外的内存使用](https://github.com/rovo98/ds-and-algs/blob/master/notes/sorting/basical-sorting-algs.md#额外的内存使用)
+	- [数据类型](https://github.com/rovo98/ds-and-algs/blob/master/notes/sorting/basical-sorting-algs.md#数据类型)
+- [选择排序](https://github.com/rovo98/ds-and-algs/blob/master/notes/sorting/basical-sorting-algs.md#选择排序----go-back-to-top)
+- [插入排序](https://github.com/rovo98/ds-and-algs/blob/master/notes/sorting/basical-sorting-algs.md#插入排序----go-back-to-top)
+- [希尔排序](https://github.com/rovo98/ds-and-algs/blob/master/notes/sorting/basical-sorting-algs.md#希尔排序----go-back-to-top)
+- [冒泡排序](https://github.com/rovo98/ds-and-algs/blob/master/notes/sorting/basical-sorting-algs.md#附加--冒泡排序----go-back-to-top)
 
 ### 引入
 
 我们关注的主要对象是**重新排列数组元素的算法**， 其中每个元素都有一个**主键**。排序算法的目的就是将所有元素的主键按照某种方式排列(通常按照大小或是字母顺序)。在```java```中元素通常都是对象，对主键的抽象描述则是通过一种内置的机制(**Comparable接口**)来完成的。
 
-#### 排序算法类模板 -- [go back to top](https://gitee.com/rovo98/ds-and-algs/tree/master/notes/sorting/basical-sorting-algs.md#basical-sorting-algorithms)
+#### 排序算法类模板 -- [go back to top](https://github.com/rovo98/ds-and-algs/blob/master/notes/sorting/basical-sorting-algs.md#basical-sorting-algorithms)
 
 ```java
 public class Example {
@@ -72,7 +72,7 @@ assert isSorted(a)
 ```
 ;来确保排序后的数组都是有序的。
 
-#### 运行时间 -- [go back to top](https://gitee.com/rovo98/ds-and-algs/tree/master/notes/sorting/basical-sorting-algs.md#basical-sorting-algorithms)
+#### 运行时间 -- [go back to top](https://github.com/rovo98/ds-and-algs/blob/master/notes/sorting/basical-sorting-algs.md#basical-sorting-algorithms)
 
 评估算法的性能。首先，要计算各个排序算法在不同的随机输入下的基本操作的次数(包括比较和交换，或者是读写数组的次数)。
 
@@ -121,7 +121,7 @@ public class Date implements Comparable<Date> {
 }
 ```
 
-### 选择排序 -- [go back to top](https://gitee.com/rovo98/ds-and-algs/tree/master/notes/sorting/basical-sorting-algs.md#basical-sorting-algorithms)
+### 选择排序 -- [go back to top](https://github.com/rovo98/ds-and-algs/blob/master/notes/sorting/basical-sorting-algs.md#basical-sorting-algorithms)
 
 首先，找到数组中最小的那个元素，其次，将它和数组的第一个元素交换位置(如果第一个元素就是最小的元素那么它就和自己交换)。 再次，在剩下的元素中找到最小的元素，将它与数组的第二个元素交换位置。如此往复，直到整个数组排序完成。**不断地选择剩余元素中的最小者**。
 
@@ -139,7 +139,7 @@ N-1-i 次比较，因此总共有 N 次交换以及 （N-1)+（N-2)+
 
 算法轨迹图示（from algs4)：
 
-![插入排序算法轨迹例子](https://gitee.com/rovo98/ds-and-algs/tree/master/images/sorting/bs_selectionSort_1.png)
+![插入排序算法轨迹例子](https://github.com/rovo98/ds-and-algs/blob/master/images/sorting/bs_selectionSort_1.png)
 
 算法实现:
 
@@ -161,7 +161,7 @@ public class Selection {
 }
 ```
 
-### 插入排序 -- [go back to top](https://gitee.com/rovo98/ds-and-algs/tree/master/notes/sorting/basical-sorting-algs.md#basical-sorting-algorithms)
+### 插入排序 -- [go back to top](https://github.com/rovo98/ds-and-algs/blob/master/notes/sorting/basical-sorting-algs.md#basical-sorting-algorithms)
 
 与选择排序一样，当前索引左边的所有元素都是有序的，但他们的最终位置不确定，为了给更小的元素腾出空间，它们可能会移动。当索引到达数组的右端时，数组排序就完成了。
 
@@ -185,7 +185,7 @@ public class Selection {
 
 插入排序算法轨迹图示（from algs4):
 
-![插入排序算法轨迹图例](https://gitee.com/rovo98/ds-and-algs/tree/master/images/sorting/bs_insertionSort_1.png)
+![插入排序算法轨迹图例](https://github.com/rovo98/ds-and-algs/blob/master/images/sorting/bs_insertionSort_1.png)
 
 算法实现:
 
@@ -246,7 +246,7 @@ public static void sort(Comparable[] a) {
 ```
 
 
-### 希尔排序 -- [go back to top](https://gitee.com/rovo98/ds-and-algs/tree/master/notes/sorting/basical-sorting-algs.md#basical-sorting-algorithms)
+### 希尔排序 -- [go back to top](https://github.com/rovo98/ds-and-algs/blob/master/notes/sorting/basical-sorting-algs.md#basical-sorting-algorithms)
 
 希尔排序是基于插入排序的快速排序算法.
 >对于规模乱序数组插入排序很慢，因为它只会交换相邻的元素，因此元素只能一点一点地从数组的一端移动到另外一端。
@@ -282,7 +282,7 @@ public class Shell {
 
 算法轨迹图例 -- example (from algs4):
 
-![希尔排序算法轨迹图例](https://gitee.com/rovo98/ds-and-algs/tree/master/images/sorting/bs_shellSort_1.png)
+![希尔排序算法轨迹图例](https://github.com/rovo98/ds-and-algs/blob/master/images/sorting/bs_shellSort_1.png)
 
 **实际应用**: 对于中等大小的数组它的运行时间是可以接受的且它的代码量小，不需要额外的内存空间。*所以在面临一个排序问题而没有系统排序函数可用时，可先用希尔排序，然后再考虑是否将它替换为更加复杂的排序算法*。
 
@@ -306,7 +306,7 @@ public static void sort(Comparable[] a) {
 }
 ```
 
-### 附加 —— 冒泡排序 -- [go back to top](https://gitee.com/rovo98/ds-and-algs/tree/master/notes/sorting/basical-sorting-algs.md#basical-sorting-algorithms)
+### 附加 —— 冒泡排序 -- [go back to top](https://github.com/rovo98/ds-and-algs/blob/master/notes/sorting/basical-sorting-algs.md#basical-sorting-algorithms)
 
 冒泡排序相对比较简单，这里直接给出它的实现:
 

@@ -8,12 +8,12 @@ date: 2018/3/10
 
 ## Table of contents
 
-- [引入](https://gitee.com/rovo98/ds-and-algs/tree/master/notes/sorting/quickSort.md#引入)
-- [基本算法](https://gitee.com/rovo98/ds-and-algs/tree/master/notes/sorting/quickSort.md#基本算法----go-back-to-top)
-- [算法改进](https://gitee.com/rovo98/ds-and-algs/tree/master/notes/sorting/quickSort.md#算法改进----go-back-to-top)
-	- [1. 切换到插入排序](https://gitee.com/rovo98/ds-and-algs/tree/master/notes/sorting/quickSort.md#1切换到插入排序)
-	- [2. 三取样切分](https://gitee.com/rovo98/ds-and-algs/tree/master/notes/sorting/quickSort.md#2-三取样切分----go-back-to-top)
-	- [3.熵最优的排序](https://gitee.com/rovo98/ds-and-algs/tree/master/notes/sorting/quickSort.md#熵最优的排序----go-back-to-top)
+- [引入](https://github.com/rovo98/ds-and-algs/blob/master/notes/sorting/quickSort.md#引入)
+- [基本算法](https://github.com/rovo98/ds-and-algs/blob/master/notes/sorting/quickSort.md#基本算法----go-back-to-top)
+- [算法改进](https://github.com/rovo98/ds-and-algs/blob/master/notes/sorting/quickSort.md#算法改进----go-back-to-top)
+	- [1. 切换到插入排序](https://github.com/rovo98/ds-and-algs/blob/master/notes/sorting/quickSort.md#1切换到插入排序)
+	- [2. 三取样切分](https://github.com/rovo98/ds-and-algs/blob/master/notes/sorting/quickSort.md#2-三取样切分----go-back-to-top)
+	- [3.熵最优的排序](https://github.com/rovo98/ds-and-algs/blob/master/notes/sorting/quickSort.md#熵最优的排序----go-back-to-top)
 
 ### 引入
 
@@ -26,7 +26,7 @@ date: 2018/3/10
 缺点：
 	快速排序非常的脆弱，在实现时要非常小心才能避免低劣的性能。
     
-### 基本算法 -- [go back to top](https://gitee.com/rovo98/ds-and-algs/tree/master/notes/sorting/quickSort.md#快速排序---quick-sort)
+### 基本算法 -- [go back to top](https://github.com/rovo98/ds-and-algs/blob/master/notes/sorting/quickSort.md#快速排序---quick-sort)
 
 快速排序是一种**分治**排序算法，它将一个数组分成两个子数组，将两部分独立地排序。不同于归并排序，快速排序的递归调用发生在处理子数之前。
 
@@ -68,11 +68,11 @@ public class Quick {
 
 上述切分方法示意图: [from algs4]
 
-![切分示意图](https://gitee.com/rovo98/ds-and-algs/tree/master/images/sorting/quickSort_partition_1.png)
+![切分示意图](https://github.com/rovo98/ds-and-algs/blob/master/images/sorting/quickSort_partition_1.png)
 
 切分轨迹图: [from algs4]
 
-![切分轨迹图](https://gitee.com/rovo98/ds-and-algs/tree/master/images/sorting/quickSort_partition_2.png)
+![切分轨迹图](https://github.com/rovo98/ds-and-algs/blob/master/images/sorting/quickSort_partition_2.png)
 
 
 ```txt
@@ -85,7 +85,7 @@ public class Quick {
 在切分不平衡时该算法可能及其低效。例如： 如果第一个次从最小的元素切分，第二次从第二小的元素切分，则这样每次只会移除一个元素。
 [solution] : **在快速排序之前将数组随机排序可以避免这种情况的发生**。
 
-### 算法改进 -- [go back to top](https://gitee.com/rovo98/ds-and-algs/tree/master/notes/sorting/quickSort.md#快速排序---quick-sort)
+### 算法改进 -- [go back to top](https://github.com/rovo98/ds-and-algs/blob/master/notes/sorting/quickSort.md#快速排序---quick-sort)
 
 #### 1.切换到插入排序
 
@@ -107,13 +107,13 @@ if (hi <= lo + M) {
 ```
 [**notice**] : 这里的切换参数 M 的最佳值是和系统相关的，但是5 ~ 15 之间的任意值在大多数情况下都能令人满意。
 
-#### 2. 三取样切分 -- [go back to top](https://gitee.com/rovo98/ds-and-algs/tree/master/notes/sorting/quickSort.md#快速排序---quick-sort)
+#### 2. 三取样切分 -- [go back to top](https://github.com/rovo98/ds-and-algs/blob/master/notes/sorting/quickSort.md#快速排序---quick-sort)
 
 改进快速排序性能的第二个方法是**使用子数组的一小部分的中位数来切分数组**。这样的切分的效果更好，但代价是需要计算中位数。
 
 - 人们发现将取样设为 3 并用大小居中的元素切分效果**最好**； 我们还可以将取样元素放在数组末尾作为哨兵(sentinel)。
 
-三取样切分抽象实现 : [详细查看](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/sorting/exercises/QuickSortImprovedTwo.java)
+三取样切分抽象实现 : [详细查看](https://github.com/rovo98/ds-and-algs/blob/master/ds/sorting/exercises/QuickSortImprovedTwo.java)
 
 ```java
 public static void quickSortImproved(Comparable[] a) {
@@ -156,7 +156,7 @@ private static void dealPivot(Comparable[] a, int lo, int hi) {
 }
 ```
 
-#### 熵最优的排序 -- [go back to top](https://gitee.com/rovo98/ds-and-algs/tree/master/notes/sorting/quickSort.md#快速排序---quick-sort)
+#### 熵最优的排序 -- [go back to top](https://github.com/rovo98/ds-and-algs/blob/master/notes/sorting/quickSort.md#快速排序---quick-sort)
 
 实际应用中经常会出现含有大量重复元素的数组，我们实现的快速排序性能尚可，但是**还有巨大的改进空间**。例如：一个元素全部重复的子数组就不需要继续排序了，但我们的快速排序还是会继续将它切分为更小的数组。
 
@@ -168,7 +168,7 @@ DIjkstra 解法 ： 从左到右遍历数组一次，维护一个指针 ```lt```
 - ```a[i]``` 大于 ```v```, 将```a[gt]```和```a[i]```交换， 将```gt```减一；
 - ```a[i]``` 等于 ```v```, ```i++.```
 
-熵最优排序抽象实现： [详细查看](https://gitee.com/rovo98/ds-and-algs/tree/master/ds/sorting/exercises/Quick3Ways.java)
+熵最优排序抽象实现： [详细查看](https://github.com/rovo98/ds-and-algs/blob/master/ds/sorting/exercises/Quick3Ways.java)
 
 ```java
 public static void quickSort(Comparable[] a) {
