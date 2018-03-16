@@ -24,7 +24,7 @@ description: datastructures and algorithms learing with java implement.
 
 ## Bag
 
-### API : [details](https://github.com/rovo98/ds-and-algs/blob/master/ds/bag/Bag.java)
+### API : [details](https://github.com/rovo98/ds-and-algs/blob/master/ds/bag/datastructures/Bag.java)
 
 |Operation     |Description|
 |:-------------:|:---------:|
@@ -37,8 +37,8 @@ description: datastructures and algorithms learing with java implement.
 
 |Name|Description|
 |:---:|:---------:|
-|[ArrayBag](https://github.com/rovo98/ds-and-algs/blob/master/ds/bag/ArrayBag.java)|An implement of Bag using ResizingArray.|
-|[LinkedBag](https://github.com/rovo98/ds-and-algs/blob/master/ds/bag/LinkedBag.java)|An implement of Bag using linked-list.|
+|[ArrayBag](https://github.com/rovo98/ds-and-algs/blob/master/ds/bag/datastructures/ArrayBag.java)|An implement of Bag using ResizingArray.|
+|[LinkedBag](https://github.com/rovo98/ds-and-algs/blob/master/ds/bag/datastructures/LinkedBag.java)|An implement of Bag using linked-list.|
 
 ## List -- [go back to top](https://github.com/rovo98/ds-and-algs#datastructures-and-algorithms)
 
