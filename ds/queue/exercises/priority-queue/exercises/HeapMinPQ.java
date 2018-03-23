@@ -11,8 +11,13 @@ import java.util.Random;
  *      Key[] heap
  *      int n
  * Operations:
- *
- *
+ *      HeapMinPQ()             Initializes an empty priority queue.
+ *      HeapMinPQ(Key[] a)      Initializes a priority queue containing all keys from array {@code a}.
+ *      void insert(Key key)    Add a key into priority queue.
+ *      Key min()               Returns a minimum key from priority queue.
+ *      Key delMin()            Remove a minimum key and returns it.
+ *      boolean isEmpty()       Returns true if priority is empty.
+ *      int size()              Returns the number of keys in priority queue.
  * endADT
  * @author rovo98
  * Date: 2018.3.22.
