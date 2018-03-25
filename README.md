@@ -16,6 +16,9 @@ description: datastructures and algorithms learing with java implement.
     - [Steque](https://github.com/rovo98/ds-and-algs#steque----go-back-to-top)
     - [Priority Queue](https://github.com/rovo98/ds-and-algs#priority-queue----go-back-to-top)
 - [UF](https://github.com/rovo98/ds-and-algs#uf----go-back-to-top)
+- [Symbol Table](https://github.com/rovo98/ds-and-algs#symbol-table----go-back-to-top)
+    - SequentialSearchST
+    - BinarySearchST
 - [Searching Algorithms](https://github.com/rovo98/ds-and-algs#searching-algorithms----go-back-to-top)
     - [Basical Searching Algorithms](https://github.com/rovo98/ds-and-algs#basical-searching-algorithms---notes)
 - [Sorting Algorithms](https://github.com/rovo98/ds-and-algs#sorting-algorithms----go-back-to-top)
@@ -222,6 +225,28 @@ description: datastructures and algorithms learing with java implement.
 |[QuickFindUF](https://github.com/rovo98/ds-and-algs/blob/master/ds/uf/exercises/QuickFindUF.java)|An implement of UF having quick find method.|
 |[QuickUnionUF](https://github.com/rovo98/ds-and-algs/blob/master/ds/uf/exercises/QuickUnionUF.java)|An implement of UF having quick union method.|
 |[WeightedUF](https://github.com/rovo98/ds-and-algs/blob/master/ds/uf/exercises/WeightedQuickUnion.java)|An implement of UF using number of nodes of blob for ranking and path halving.|
+
+## Symbol Table -- [go back to top](https://github.com/rovo98/ds-and-algs#datastructures-and-algorithms)
+
+### API : [detials](https://github.com/rovo98/ds-and-algs/blob/master/ds/symbolTable/datastructures/ST.java)
+
+|Operation|Description|
+|:-------:|:----------:|
+|ST()|Initializes an empty symbol table|
+|void put(Key key, Value val)|Add a key-value into table, delete key if val is null|
+|Value get(Key key)|Get the value of a key-value which key is key|
+|void delete(Key key)|Delete a key-value|
+|boolean contains(Key key)|Returns true if key in table, otherwise false|
+|boolean isEmpty()|Returns true if symbol table if empty, otherwise false|
+|int size()|Returns the number of keys in table|
+|Iterable<Key> keys()|Returns an iterable obj that iterates over keys in table|
+
+### Implements
+
+|Name|Description|
+|:----:|:--------:|
+|[SequentialSearchST](https://github.com/rovo98/ds-and-algs/blob/master/ds/symbolTable/datastructures/SequentialSearchST.java)|An implementation of ST using singly-linked-list with no order|
+|[BinarySearchST](https://github.com/rovo98/ds-and-algs/blob/master/ds/symbolTable/datastructures/BinarySearchST.java)|An implementation of ST using resizing arrays and binary search algorithm|
 
 ## Searching Algorithms -- [go back to top](https://github.com/rovo98/ds-and-algs#datastructures-and-algorithms)
 
