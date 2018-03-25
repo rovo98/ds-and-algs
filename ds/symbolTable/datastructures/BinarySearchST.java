@@ -123,6 +123,9 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> implements ST<Ke
             values[i] = values[i+1];
         }
         n--;
+        if (n == keys.length / 4) {
+            resize(keys.length / 2);
+        }
     }
     /**
      * Returns true if {@code key} in symbol table.
