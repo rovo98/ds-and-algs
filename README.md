@@ -248,6 +248,14 @@ description: datastructures and algorithms learing with java implement.
 |[SequentialSearchST](https://github.com/rovo98/ds-and-algs/blob/master/ds/symbolTable/datastructures/SequentialSearchST.java)|An implementation of ST using singly-linked-list with no order|
 |[BinarySearchST](https://github.com/rovo98/ds-and-algs/blob/master/ds/symbolTable/datastructures/BinarySearchST.java)|An implementation of ST using resizing arrays and binary search algorithm|
 
+#### Time Complexity of these two implementations
+
+|ds-name|worst case||average case||Is high preformance|
+|:------:|:------:|:------:|:-----:|:-------:|:---------:|
+|   |get()|put()|get()|put()| |
+|SequantialSearchST| N | N | N/2  | N| NO |
+|BinarySearchST|lgN|2N|lgN|N|Yes|
+
 ## Searching Algorithms -- [go back to top](https://github.com/rovo98/ds-and-algs#datastructures-and-algorithms)
 
 ### Basical Searching Algorithms - [notes](https://github.com/rovo98/ds-and-algs/blob/master/notes/searching/basical-searching-algorithms.md)
