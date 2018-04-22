@@ -87,7 +87,7 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> implements ST<Ke
     @Override
     public void put(Key key, Value value) {
         int index = binarySearch(key);
-        if (index > -1) {
+        if (index > -1) { // if the key is already in keys, update its value.
             values[index] = value;
         } else {
             if (n == keys.length) {
