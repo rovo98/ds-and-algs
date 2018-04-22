@@ -177,8 +177,8 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> implements ST<Ke
     }
 
     /**
-     * Returns an iterable obj that iterates over keys in symbol table.
-     * @return an iterable obj that iterates over keys in symbol table.
+     * Returns an iterable obj that iterates over keys in symbol table in ascending order.
+     * @return an iterable obj that iterates over keys in symbol table in ascending order.
      */
     @Override
     public Iterable<Key> keys() {
@@ -190,15 +190,15 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> implements ST<Ke
             }
             // A symbol table iterator that iterates over keys in table.
             private class STIterator implements Iterator<Key> {
-                private int i = n;
+                private int i = 0;
                 public boolean hasNext() {
-                    return i > 0;
+                    return i < n;
                 }
                 public Key next() {
                     if (!hasNext()) {
                         throw new NoSuchElementException();
                     }
-                    return keys[--i];
+                    return keys[i++];
                 }
                 public void remove() {
                     throw new UnsupportedOperationException();
