@@ -42,7 +42,7 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> implements ST<Ke
 
     /**
      * Resizing the keys and values arrays.
-     * @param max the new size of the resized arrays.
+     * @param max the new size of the resizing arrays.
      */
     @SuppressWarnings("unchecked")
     private void resize(int max) {
