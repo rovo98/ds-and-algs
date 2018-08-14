@@ -205,13 +205,13 @@ public class SequentialSearchST<Key extends Comparable<Key>, Value> implements S
      * @param args command arguments.
      */
     public static void main(String[] args) {
-        ST<Integer, String> st = new SequentialSearchST<>();
-        String[] test = {"mshinoda", "john", "chester", "bennington", "mike"};
-        for (int i = 1; i < 6; i++) {
-            st.put(i, test[i-1]);
+        ST<String, Integer> st = new SequentialSearchST<>();
+        String[] test = {"S", "E", "A", "R", "C", "H", "E", "X", "A", "M", "P", "L", "E"};
+        for (int i = 0; i < test.length; i++) {
+            st.put(test[i], i);
         }
         System.out.println("The input test symbol table:");
-        for (int key : st.keys()) {
+        for (String key : st.keys()) {
             System.out.println(key + " -> " + st.get(key) + " ");
         }
         System.out.println("The number of keys in symbol table is " + st.size() + ".");
