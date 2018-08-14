@@ -86,22 +86,27 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> implements ST<Ke
      */
     @Override
     public void put(Key key, Value value) {
+        if (value == null) {
+            delete(key);
+            return;
+        }
         int index = binarySearch(key);
         if (index > -1) { // if the key is already in keys, update its value.
             values[index] = value;
-        } else {
-            if (n == keys.length) {
-                resize(keys.length * 2);
-            }
-            // use a idea of insertion sort the insert the key to keys[0, .. n-1]
-            int j = n - 1;
-            for (; j >= 0 && key.compareTo(keys[j]) < 0; j--) {
-                keys[j+1] = keys[j];
-            }
-            keys[j+1] = key;
-            values[j+1] = value;
-            n++;
+            return;
         }
+        if (n == keys.length) {
+            resize(keys.length * 2);
+        }
+        // use a idea of insertion sort the insert the key to keys[0, .. n-1]
+        int j = n - 1;
+        for (; j >= 0 && key.compareTo(keys[j]) < 0; j--) {
+            keys[j+1] = keys[j];
+            values[j+1] = values[j];
+        }
+        keys[j+1] = key;
+        values[j+1] = value;
+        n++;
     }
 
     /**
@@ -164,7 +169,7 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> implements ST<Ke
         int hi = n - 1;
         while (lo <= hi) {
             int mid = lo + (hi - lo) / 2;
-            if (keys[mid].equals(key)) {
+            if (keys[mid].compareTo(key) == 0) {
                 return mid;
             } else if (keys[mid].compareTo(key) > 0) {
                 hi = mid - 1;
@@ -211,13 +216,13 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> implements ST<Ke
      * @param args command arguments.
      */
     public static void main(String[] args) {
-        ST<Integer, String> st = new BinarySearchST<>();
-        String[] test = {"John", "mike", "小明", "啦啦", "小花"};
-        for (int i = 1; i < 6; i++) {
-            st.put(i, test[i-1]);
+        ST<String, Integer> st = new BinarySearchST<>();
+        String[] test = {"S", "E", "A", "R", "C", "H", "E", "X", "A", "M", "P", "L", "E"};
+        for (int i = 0; i < test.length; i++) {
+            st.put(test[i], i);
         }
         System.out.println("The input test BinarySearchST is the following:");
-        for (int key : st.keys()) {
+        for (String key : st.keys()) {
             System.out.println(key + " -> " + st.get(key) + " ");
         }
         System.out.println("The number of keys is " + st.size() + ".");
