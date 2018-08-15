@@ -101,6 +101,7 @@ public class BinarySearchSortedST<Key extends Comparable<Key>, Value> implements
      */
     @Override
     public int size(Key lo, Key hi) {
+        if (lo == null || hi == null) throw new IllegalArgumentException("The given keys can not be null");
         int lIndex = this.binarySearch(lo);
         int rIndex = this.binarySearch(hi);
         if (lIndex < 0 || rIndex < 0) throw new IllegalArgumentException("The given keys are invalid");
