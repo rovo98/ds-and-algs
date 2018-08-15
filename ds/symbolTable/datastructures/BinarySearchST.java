@@ -86,6 +86,7 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> implements ST<Ke
      */
     @Override
     public void put(Key key, Value value) {
+        if (key == null) throw new UnsupportedOperationException("The key can not be null");
         if (value == null) {
             delete(key);
             return;
