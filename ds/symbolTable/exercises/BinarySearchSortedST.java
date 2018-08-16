@@ -86,6 +86,11 @@ public class BinarySearchSortedST<Key extends Comparable<Key>, Value> implements
      *
      * @return the number of key-values paris in the symbol table.
      */
+    /*
+    Complexity Analysis:
+        TC : O(1)
+        SC : O(1)
+     */
     @Override
     public int size() {
         return n;
@@ -98,6 +103,11 @@ public class BinarySearchSortedST<Key extends Comparable<Key>, Value> implements
      * @param hi the endIndex key.
      * @return the number of the keys between the key {@code lo} and the key {@code hi}
      * @throws IllegalArgumentException if the key {@code lo} or the key {@code hi} was invalid.
+     */
+    /*
+    Complexity Analysis:
+        TC : O(log N)
+        SC : O(1)
      */
     @Override
     public int size(Key lo, Key hi) {
@@ -114,6 +124,12 @@ public class BinarySearchSortedST<Key extends Comparable<Key>, Value> implements
      * @param key the key to validate.
      * @return {@code true} if the given {@code key} in the table;
      * {@code false} otherwise.
+     * @throws IllegalArgumentException if the given key is null.
+     */
+    /*
+    Complexity Analysis:
+        TC : O(log N)
+        SC : O(1)
      */
     @Override
     public boolean contains(Key key) {
@@ -126,6 +142,11 @@ public class BinarySearchSortedST<Key extends Comparable<Key>, Value> implements
      * @return {@code true} if the table is empty;
      * {@code false} otherwise.
      */
+    /*
+    Complexity Analysis:
+        TC : O(1)
+        SC : O(1)
+     */
     @Override
     public boolean isEmpty() {
         return this.n == 0;
@@ -137,6 +158,12 @@ public class BinarySearchSortedST<Key extends Comparable<Key>, Value> implements
      * @param key   the key of the key-value pair.
      * @param value the values of the key-value pair
      * @throws UnsupportedOperationException if the key is null.
+     * @throws NoSuchElementException if hte value is null and the given key is not in the table.
+     */
+    /*
+    Complexity Analysis:
+        TC : O(N) for insertion sorting loop
+        SC : O(1)
      */
     @Override
     public void put(Key key, Value value) {
@@ -171,9 +198,16 @@ public class BinarySearchSortedST<Key extends Comparable<Key>, Value> implements
      * @param key the key of a key-value pair.
      * @return the {@code value} of the given {@code key} if the key exists in the table;
      * {@code null} otherwise.
+     * @throws IllegalArgumentException if the given key is null.
+     */
+    /*
+    Complexity Analysis:
+        TC : O(log N) for binary Searching
+        SC : O(1)
      */
     @Override
     public Value get(Key key) {
+        if (key == null) throw new IllegalArgumentException("The given key can not be null");
         int index = this.binarySearch(key);
         if (index > -1) return values[index];
         return null;
@@ -184,6 +218,11 @@ public class BinarySearchSortedST<Key extends Comparable<Key>, Value> implements
      *
      * @return the maximum key in the symbol table.
      */
+    /*
+    Complexity Analysis:
+        TC : O(1)
+        SC : O(1)
+     */
     @Override
     public Key max() {
         return keys[n];
@@ -193,6 +232,11 @@ public class BinarySearchSortedST<Key extends Comparable<Key>, Value> implements
      * Returns the minimum key in the symbol table.
      *
      * @return the minimum key in the symbol table.
+     */
+    /*
+    Complexity Analysis:
+        TC : O(1)
+        SC : O(1)
      */
     @Override
     public Key min() {
@@ -205,6 +249,11 @@ public class BinarySearchSortedST<Key extends Comparable<Key>, Value> implements
      * @param key the key of the key-value pair to be deleted.
      * @return {@code value} of the deleted key-value pair.
      * @throws NoSuchElementException if the key not in the table.
+     */
+    /*
+    Complexity Analysis:
+        TC : O(N) for moving the elements.
+        SC : O(1)
      */
     @Override
     public Value delete(Key key) {
@@ -229,6 +278,11 @@ public class BinarySearchSortedST<Key extends Comparable<Key>, Value> implements
      *
      * @return value of the maximum key.
      */
+    /*
+    Complexity Analysis:
+        TC : O(N)
+        SC : O(1)
+     */
     @Override
     public Value deleteMax() {
         return delete(max());
@@ -238,6 +292,11 @@ public class BinarySearchSortedST<Key extends Comparable<Key>, Value> implements
      * Delete the minimum key in the table and return its value.
      *
      * @return value of the minimum key.
+     */
+    /*
+    Complexity Analysis:
+        TC : O(N)
+        SC : O(1)
      */
     @Override
     public Value deleteMin() {
@@ -249,6 +308,12 @@ public class BinarySearchSortedST<Key extends Comparable<Key>, Value> implements
      *
      * @param key the given key
      * @return the value of the most closest key that smaller than the given key.
+     * @throws NoSuchElementException if the given key is not in the table.
+     */
+    /*
+    Complexity Analysis:
+        TC : O(log N)
+        SC : O(1)
      */
     @Override
     public Key floor(Key key) {
@@ -262,6 +327,12 @@ public class BinarySearchSortedST<Key extends Comparable<Key>, Value> implements
      *
      * @param key the given key
      * @return the value of the most closest key that greater than the given key.
+     * @throws NoSuchElementException if the given key is not in the table.
+     */
+    /*
+    Complexity Analysis:
+        TC : O(log N)
+        SC : O(1)
      */
     @Override
     public Key ceiling(Key key) {
@@ -277,6 +348,11 @@ public class BinarySearchSortedST<Key extends Comparable<Key>, Value> implements
      * @return the number of the keys that smaller than the given {@code key};<br>
      * returns {@code 0} if the key not in the table.
      */
+    /*
+    Complexity Analysis:
+        TC : O(log N)
+        SC : O(1)
+     */
     @Override
     public int rank(Key key) {
         int index = this.binarySearch(key);
@@ -290,6 +366,11 @@ public class BinarySearchSortedST<Key extends Comparable<Key>, Value> implements
      * @return the k-th key in the symbol table.
      * @throws IllegalArgumentException if the {@code k} is out of the range of [1, n]
      */
+    /*
+    Complexity Analysis:
+        TC : O(1)
+        SC : O(1)
+     */
     @Override
     public Key select(int k) {
         if (k < 1 || k > n) throw new IllegalArgumentException("k is out of the range of [1, n]");
@@ -300,6 +381,11 @@ public class BinarySearchSortedST<Key extends Comparable<Key>, Value> implements
      * Returns a iterator that contains all keys in the table in the ascending order.
      *
      * @return a iterator that contains all the keys in the table in ascending order.
+     */
+    /*
+    Complexity Analysis:
+        TC : O(1)
+        SC : O(1)
      */
     @Override
     public Iterable<Key> keys() {
