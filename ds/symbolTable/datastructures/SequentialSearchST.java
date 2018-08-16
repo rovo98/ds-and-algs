@@ -94,7 +94,7 @@ public class SequentialSearchST<Key extends Comparable<Key>, Value> implements S
             }
             pNode = pNode.next;
         }
-        // otherwise.
+        // otherwise. using the heading insertion method.
         first = new Node<>(key, value, first);
         n++;
 
