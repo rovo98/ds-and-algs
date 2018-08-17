@@ -64,12 +64,14 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> implements ST<Ke
      * @param key the key to be searched.
      * @return the value of the {@code key} if key in symbol table;
      * {@code null} otherwise.
+     * @throws IllegalArgumentException if the given key is null.
      */
     /*
     Time complexity: O(log n).
      */
     @Override
     public Value get(Key key) {
+        if (key == null) throw new IllegalArgumentException("The given key can not be null");
         int index = binarySearch(key);
         if (index < 0) {
             return null;
@@ -82,6 +84,7 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> implements ST<Ke
      *
      * @param key   the key of key-value to add to symbol table;
      * @param value the value of key-value to add to symbol table.
+     * @throws UnsupportedOperationException if the given key is null
      */
     /*
     Complexity Analysis:
@@ -145,6 +148,7 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> implements ST<Ke
      * @param key the key to be searched.
      * @return {@code true} if key in symbol table;
      * {@code false} otherwise.
+     * @throws IllegalArgumentException if the given is null.
      */
     @Override
     public boolean contains(Key key) {
