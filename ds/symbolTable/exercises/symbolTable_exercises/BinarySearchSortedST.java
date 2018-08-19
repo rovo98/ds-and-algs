@@ -1,4 +1,4 @@
-package com.rovo98.ds.symbolTable.exercises;
+package com.rovo98.ds.symbolTable.exercises.symbolTable_exercises;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
@@ -217,6 +217,7 @@ public class BinarySearchSortedST<Key extends Comparable<Key>, Value> implements
      * Returns the maximum key in the symbol table.
      *
      * @return the maximum key in the symbol table.
+     * @throws UnsupportedOperationException if the table is empty.
      */
     /*
     Complexity Analysis:
@@ -225,6 +226,7 @@ public class BinarySearchSortedST<Key extends Comparable<Key>, Value> implements
      */
     @Override
     public Key max() {
+        if (this.isEmpty()) throw new UnsupportedOperationException("The table now is empty");
         return keys[n];
     }
 
@@ -232,6 +234,7 @@ public class BinarySearchSortedST<Key extends Comparable<Key>, Value> implements
      * Returns the minimum key in the symbol table.
      *
      * @return the minimum key in the symbol table.
+     * @throws UnsupportedOperationException if the table is empty.
      */
     /*
     Complexity Analysis:
@@ -240,6 +243,7 @@ public class BinarySearchSortedST<Key extends Comparable<Key>, Value> implements
      */
     @Override
     public Key min() {
+        if (this.isEmpty()) throw new UnsupportedOperationException("The table now is empty");
         return keys[0];
     }
 
