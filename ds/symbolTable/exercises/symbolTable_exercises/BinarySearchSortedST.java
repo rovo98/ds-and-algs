@@ -430,7 +430,7 @@ public class BinarySearchSortedST<Key extends Comparable<Key>, Value> implements
 
             @Override
             public boolean hasNext() {
-                return n < endIndex;
+                return n <= endIndex;
             }
 
             @Override
