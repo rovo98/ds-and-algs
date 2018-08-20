@@ -1,4 +1,4 @@
-package com.rovo98.ds.symbolTable.exercises;
+package com.rovo98.ds.symbolTable.exercises.symbolTable_exercises;
 
 /**
  * @author : rovo98
@@ -19,6 +19,7 @@ package com.rovo98.ds.symbolTable.exercises;
  * Key ceiling(Key key)                 Returns the minimum key that greater than the given {@code key}.
  * int rank(Key key)                    Returns the number of the key that less than the given {@code key}.
  * Key select(int k)                    Returns the k-th key in the sorted order.
+ * Value delete(Key key)                Delete the given key in the table if exists.
  * void deleteMin()                     Delete the mininum key in the table.
  * void deleteMax()                     Delete the maximum key in the table.
  * int size(Key lo, Key hi)             Returns the number of keys between the range of [lo, hi].
