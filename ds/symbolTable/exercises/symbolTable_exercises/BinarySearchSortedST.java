@@ -361,7 +361,7 @@ public class BinarySearchSortedST<Key extends Comparable<Key>, Value> implements
     @Override
     public int rank(Key key) {
         int index = this.binarySearch(key);
-        return (index < 0) ? 0 : index;
+        return (index < 0) ? 0 : index + 1;
     }
 
     /**
@@ -462,5 +462,7 @@ public class BinarySearchSortedST<Key extends Comparable<Key>, Value> implements
             System.out.println(key + " -> " + BST.get(key) + " ");
         }
         System.out.println("The number of keys in symbol table is " + BST.size() + ".");
+        System.out.println("The rank of the key 'A' is : " + BST.rank("A"));
+        System.out.println(BST.select(BST.rank("A")).equals("A"));
     }
 }
