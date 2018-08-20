@@ -27,10 +27,10 @@ public class LinkedDeque<Item> implements Deque<Item> {
     private DListNode<Item> last;
     private int n;
 
-    class DListNode<Item> {
-        Item item;
-        DListNode<Item> previous;
-        DListNode<Item> next;
+    class DListNode<item> {
+        item item;
+        DListNode<item> previous;
+        DListNode<item> next;
     }
 
     /**
@@ -114,11 +114,11 @@ public class LinkedDeque<Item> implements Deque<Item> {
     }
     @Override
     public String toString() {
-        String s = "";
+        StringBuilder s = new StringBuilder();
         for (Item item : this) {
-            s = new StringBuffer().append(s).append(item).append(" ").toString();
+            s.append(item).append(" ");
         }
-        return s;
+        return s.toString();
     }
     /**
      * Remove an item from the right of deque.
@@ -143,9 +143,9 @@ public class LinkedDeque<Item> implements Deque<Item> {
      */
     @Override
     public Iterator<Item> iterator() {
-        return new DequeIterator<>(first);
+        return new DequeIterator(first);
     }
-    private class DequeIterator<Item> implements Iterator<Item> {
+    private class DequeIterator implements Iterator<Item> {
         private DListNode<Item> current;
         private DequeIterator(DListNode<Item> first) {
             current = first;
