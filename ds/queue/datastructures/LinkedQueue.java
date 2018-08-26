@@ -28,9 +28,9 @@ public class LinkedQueue<Item> implements Queue<Item> {
     private Node<Item> last;
     private int n;
 
-    private class Node<Item> {
-        Item item;
-        Node<Item> next;
+    private class Node<item> {
+        item item;
+        Node<item> next;
     }
 
     /**
@@ -118,11 +118,11 @@ public class LinkedQueue<Item> implements Queue<Item> {
      */
     @Override
     public String toString() {
-        String  s = "";
+        StringBuilder s = new StringBuilder();
         for (Item item : this) {
-            s = new StringBuffer().append(s).append(item).append(" ").toString();
+            s.append(item).append(" ");
         }
-        return s;
+        return s.toString();
     }
     /**
      * Returns an iterator to the queue that iterates through items in the queue in LILO order.
@@ -130,9 +130,9 @@ public class LinkedQueue<Item> implements Queue<Item> {
      */
     @Override
     public Iterator<Item> iterator() {
-        return new LinkedQueueIterator<>(first);
+        return new LinkedQueueIterator(first);
     }
-    private class LinkedQueueIterator<Item> implements Iterator<Item> {
+    private class LinkedQueueIterator implements Iterator<Item> {
         private Node<Item> current;
         private LinkedQueueIterator(Node<Item> first) {
             current = first;

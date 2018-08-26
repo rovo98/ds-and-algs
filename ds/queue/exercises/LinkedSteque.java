@@ -26,9 +26,9 @@ public class LinkedSteque<Item> implements Steque<Item> {
     private ListNode<Item> last;
     private int n;
 
-    class ListNode<Item> {
-        Item item;
-        ListNode<Item> next;
+    class ListNode<item> {
+        item item;
+        ListNode<item> next;
     }
 
     /**
@@ -128,11 +128,11 @@ public class LinkedSteque<Item> implements Steque<Item> {
      */
     @Override
     public String toString() {
-        String s = "";
+        StringBuilder s = new StringBuilder();
         for (Item item : this) {
-            s = new StringBuffer().append(s).append(item).append(" ").toString();
+            s.append(item).append(" ");
         }
-        return s;
+        return s.toString();
     }
     /**
      * Returns an iterator to this steque that iterates over items in steque.
@@ -142,9 +142,9 @@ public class LinkedSteque<Item> implements Steque<Item> {
     // Space complexity: O(1).
     @Override
     public Iterator<Item> iterator() {
-        return new StequeIterator<>(first);
+        return new StequeIterator(first);
     }
-    private class StequeIterator<Item> implements Iterator<Item> {
+    private class StequeIterator implements Iterator<Item> {
         private ListNode<Item> current;
         private StequeIterator(ListNode<Item> first) {
             current = first;
