@@ -4,12 +4,12 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 /**
- * @author : rovo98
- * date : 2018/8/14
+ * @author  rovo98
+ * @date  2018/8/14
  *
  * Sorted Symbol Table interface
  *
- * SortedST()                      Initialize a sorted symbol table.
+ * SortedST()                           Initialize a sorted symbol table.
  * void put(Key key, Value value)       Put a key-value pair into table; update value if key exists, delete key-value pair
  * if key is {@code null}
  * Value get(Key key)                   Get the value of the given {@code key}, returns {@code null} if key no in table.
@@ -361,7 +361,7 @@ public class BinarySearchSortedST<Key extends Comparable<Key>, Value> implements
     @Override
     public int rank(Key key) {
         int index = this.binarySearch(key);
-        return (index < 0) ? 0 : index + 1;
+        return (index < 0) ? 0 : index;
     }
 
     /**
@@ -378,8 +378,8 @@ public class BinarySearchSortedST<Key extends Comparable<Key>, Value> implements
      */
     @Override
     public Key select(int k) {
-        if (k < 1 || k > n) throw new IllegalArgumentException("k is out of the range of [1, n]");
-        return keys[k - 1];
+        if (k < 0 || k >= n) throw new IllegalArgumentException("k is out of the range of [1, n]");
+        return keys[k];
     }
 
     /**
@@ -394,7 +394,7 @@ public class BinarySearchSortedST<Key extends Comparable<Key>, Value> implements
      */
     @Override
     public Iterable<Key> keys() {
-        return new BinarySearchSortedSTIterator(select(1), select(n));
+        return new BinarySearchSortedSTIterator(select(0), select(n-1));
     }
 
     /**
