@@ -1,8 +1,8 @@
 package com.rovo98.ds.symbolTable.exercises.symbolTable_exercises;
 
 /**
- * @author : rovo98
- * date : 2018/8/14
+ * @author  rovo98
+ * @date  2018/8/14
  *
  * Sorted Symbol Table interface
  *
@@ -20,7 +20,7 @@ package com.rovo98.ds.symbolTable.exercises.symbolTable_exercises;
  * int rank(Key key)                    Returns the number of the key that less than the given {@code key}.
  * Key select(int k)                    Returns the k-th key in the sorted order.
  * Value delete(Key key)                Delete the given key in the table if exists.
- * void deleteMin()                     Delete the mininum key in the table.
+ * void deleteMin()                     Delete the minimum key in the table.
  * void deleteMax()                     Delete the maximum key in the table.
  * int size(Key lo, Key hi)             Returns the number of keys between the range of [lo, hi].
  * Iterable<Key> keys(Key lo, Key hi)   Returns a iterator containing the keys between the range of [lo, hi].
