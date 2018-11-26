@@ -2,16 +2,16 @@ package com.rovo98.ds.searching;
 
 /**
  * ExponentialSearch implement.
- *
- * Exponential Search involves two steps:
- *     1. Find the range where element is present.
- *     2. Do Binary Search in above found range.
- *
- *
- * How to find the range where element may be present?
+ * <p>
+ * Exponential Search involves two steps:<br />
+ * 1. Find the range where element is present.<br />
+ * 2. Do Binary Search in above found range.<br />
+ * <p>
+ * <p>
+ * How to find the range where element may be present?<br>
  * The idea is to start with subArray size 1 compare its last element with x, then try
  * size 2, then 4 and so on until last element of a subArray is not greater.
- *
+ * <p>
  * Once we find an index i (after repeated doubling of i), we know that the element must
  * be present between i/2 and i.
  *
@@ -26,19 +26,29 @@ Applications of Exponential Search:
      to be searched is closer to the first element.
  */
 public class ExponentialSearch {
+
+    /**
+     * private empty constructor
+     * <p>
+     * this class can not be instanced.
+     */
+    private ExponentialSearch() {
+    }
+
     /**
      * Returns the index of element to be searched.
+     *
      * @param arr array where need to be searched.
      * @param key the element to be searched.
      * @return the index of element to be searched if element present;
-     *      {@code -1} otherwise.
+     * {@code -1} otherwise.
      */
     /*
     Complexity Analysis:
         Time complexity: O(log n).
         Space complexity: O(1).
      */
-    public static int search(int arr[], int key) {
+    public static int search(int[] arr, int key) {
         int n = arr.length;
         // If x is present at first location itself
         if (arr[0] == key) {
@@ -50,8 +60,9 @@ public class ExponentialSearch {
             i = i * 2;
         }
         // Call binary search for the found range.
-        return binarySearch(arr, i/2, Math.min(i, n), key);
+        return binarySearch(arr, i / 2, Math.min(i, n), key);
     }
+
     // Binary search.
     private static int binarySearch(int[] arr, int lo, int hi, int key) {
         while (lo <= hi) {
@@ -68,10 +79,11 @@ public class ExponentialSearch {
 
     /**
      * Unit tests the {@code ExponentialSearch}.
+     *
      * @param args command-line arguments.
      */
     public static void main(String[] args) {
-        int arr[] = {2, 3, 4, 10, 40};
+        int[] arr = {2, 3, 4, 10, 40};
         System.out.println("The input test array is the following:");
         for (int item : arr) {
             System.out.print(item + " ");
