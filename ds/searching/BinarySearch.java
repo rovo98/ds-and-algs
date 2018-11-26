@@ -2,8 +2,8 @@ package com.rovo98.ds.searching;
 
 /**
  * BinarySearch implement.
- *
- *
+ * <p>
+ * <p>
  * Binary Search : Search a sorted array by repeatedly dividing the search interval in half.
  * Begin with an interval covering the whole array. If the value of the search key is less than
  * the item in the middle of the interval, narrow the interval to the lower half. Otherwise narrow
@@ -14,14 +14,24 @@ package com.rovo98.ds.searching;
  * Date: 2/3/2018
  */
 public class BinarySearch {
+
+    /**
+     * private empty constructor
+     * <p>
+     * this class can not be instanced.
+     */
+    private BinarySearch() {
+    }
+
     /**
      * Returns the index of the element to be searched.
+     *
      * @param arr array where need to be searched.
      * @param key the element to be searched.
      * @return the index of the element to be searched if key present in array;
-     *          {@code -1} otherwise.
+     * {@code -1} otherwise.
      */
-    public static int search(int arr[], int key) {
+    public static int search(int[] arr, int key) {
         int lo = 0;
         int hi = arr.length - 1;
 
@@ -41,6 +51,7 @@ public class BinarySearch {
 
     /**
      * Unit tests the {@code BinarySearch}.
+     *
      * @param args arguments.
      */
     public static void main(String[] args) {
