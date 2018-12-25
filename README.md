@@ -5,6 +5,27 @@ description: datastructures and algorithms learing with java implement.
 
 # Datastructures and Algorithms.
 
+## Table of contents
+
+- [Bag](https://github.com/rovo98/ds-and-algs#bag)
+- [List](https://github.com/rovo98/ds-and-algs#list----go-back-to-top)
+    - [DoubleList](https://github.com/rovo98/ds-and-algs#doublelist----go-back-to-top)
+- [Stack](https://github.com/rovo98/ds-and-algs#stack----go-back-to-top)
+- [Queue](https://github.com/rovo98/ds-and-algs#queue----go-back-to-top)
+    - [Deque](https://github.com/rovo98/ds-and-algs#deque----go-back-to-top)
+    - [Steque](https://github.com/rovo98/ds-and-algs#steque----go-back-to-top)
+    - [Priority Queue](https://github.com/rovo98/ds-and-algs#priority-queue----go-back-to-top)
+- [UF](https://github.com/rovo98/ds-and-algs#uf----go-back-to-top)
+- [Symbol Table](https://github.com/rovo98/ds-and-algs#symbol-table----go-back-to-top)
+    - SequentialSearchST
+    - BinarySearchST
+- [Searching Algorithms](https://github.com/rovo98/ds-and-algs#searching-algorithms----go-back-to-top)
+    - [Basical Searching Algorithms](https://github.com/rovo98/ds-and-algs#basical-searching-algorithms---notes)
+- [Sorting Algorithms](https://github.com/rovo98/ds-and-algs#sorting-algorithms----go-back-to-top)
+    - [Basical Sorting Algorithms](https://github.com/rovo98/ds-and-algs#basical-sorting-algorithms---notes)
+    - [Some Improvements](https://github.com/rovo98/ds-and-algs#some-improvements---notes-for-mergesort---notes-for-quicksort)
+
+
 ```txt
 ds-and-algs
 ├── ds
@@ -148,26 +169,6 @@ ds-and-algs
 
 35 directories, 103 files
 ```
-
-## Table of contents
-
-- [Bag](https://github.com/rovo98/ds-and-algs#bag)
-- [List](https://github.com/rovo98/ds-and-algs#list----go-back-to-top)
-    - [DoubleList](https://github.com/rovo98/ds-and-algs#doublelist----go-back-to-top)
-- [Stack](https://github.com/rovo98/ds-and-algs#stack----go-back-to-top)
-- [Queue](https://github.com/rovo98/ds-and-algs#queue----go-back-to-top)
-    - [Deque](https://github.com/rovo98/ds-and-algs#deque----go-back-to-top)
-    - [Steque](https://github.com/rovo98/ds-and-algs#steque----go-back-to-top)
-    - [Priority Queue](https://github.com/rovo98/ds-and-algs#priority-queue----go-back-to-top)
-- [UF](https://github.com/rovo98/ds-and-algs#uf----go-back-to-top)
-- [Symbol Table](https://github.com/rovo98/ds-and-algs#symbol-table----go-back-to-top)
-    - SequentialSearchST
-    - BinarySearchST
-- [Searching Algorithms](https://github.com/rovo98/ds-and-algs#searching-algorithms----go-back-to-top)
-    - [Basical Searching Algorithms](https://github.com/rovo98/ds-and-algs#basical-searching-algorithms---notes)
-- [Sorting Algorithms](https://github.com/rovo98/ds-and-algs#sorting-algorithms----go-back-to-top)
-    - [Basical Sorting Algorithms](https://github.com/rovo98/ds-and-algs#basical-sorting-algorithms---notes)
-    - [Some Improvements](https://github.com/rovo98/ds-and-algs#some-improvements---notes-for-mergesort---notes-for-quicksort)
 
 ## Bag
 
