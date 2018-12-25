@@ -5,6 +5,150 @@ description: datastructures and algorithms learing with java implement.
 
 # Datastructures and Algorithms.
 
+```txt
+ds-and-algs
+├── ds
+│   ├── bag
+│   │   ├── datastructures
+│   │   │   ├── ArrayBag.java
+│   │   │   ├── Bag.java
+│   │   │   └── LinkedBag.java
+│   │   └── exercises
+│   │       └── RandomBag.java
+│   ├── graph
+│   │   └── algorithms
+│   │       └── DetectCycleDemo.java
+│   ├── list
+│   │   ├── algorithms
+│   │   │   ├── InsertionSortList.java
+│   │   │   ├── MergeSortList.java
+│   │   │   └── ReverseList.java
+│   │   ├── datastructures
+│   │   │   ├── ArrayList.java
+│   │   │   ├── LinkedList.java
+│   │   │   └── List.java
+│   │   └── exercises
+│   │       └── DoubleNode.java
+│   ├── queue
+│   │   ├── datastructures
+│   │   │   ├── LinkedQueue.java
+│   │   │   └── Queue.java
+│   │   └── exercises
+│   │       ├── Deque.java
+│   │       ├── LinkedDeque.java
+│   │       ├── LinkedSteque.java
+│   │       ├── priority-queue
+│   │       │   ├── ArrayPQWithNoOrder.java
+│   │       │   ├── ArrayPQWithOrder.java
+│   │       │   ├── exercises
+│   │       │   │   ├── HeapMinPQ.java
+│   │       │   │   ├── MaxPQDemo.java
+│   │       │   │   └── MinPQ.java
+│   │       │   ├── HeapMaxPQ.java
+│   │       │   ├── LinkedPQWithNoOrder.java
+│   │       │   ├── LinkedPQWithOrder.java
+│   │       │   └── MaxPQ.java
+│   │       ├── RandomQueue.java
+│   │       ├── ResizingArrayDeque.java
+│   │       └── Steque.java
+│   ├── searching
+│   │   ├── BinarySearch.java
+│   │   ├── ExponentialSearch.java
+│   │   ├── InterpolationSearch.java
+│   │   ├── JumpSearch.java
+│   │   ├── LinearSearch.java
+│   │   └── TernarySearch.java
+│   ├── sorting
+│   │   ├── Bubble.java
+│   │   ├── exercises
+│   │   │   ├── Merge3Ways.java
+│   │   │   ├── MergeSortedQueue.java
+│   │   │   ├── MergeSortImproved.java
+│   │   │   ├── Quick3WaysImproved.java
+│   │   │   ├── Quick3Ways.java
+│   │   │   ├── QuickMerge.java
+│   │   │   ├── QuickSortImproved.java
+│   │   │   ├── QuickSortImprovedTwo.java
+│   │   │   ├── SortCompare.java
+│   │   │   ├── Stopwatch.java
+│   │   │   └── UBMergeSortDemo.java
+│   │   ├── Heap.java
+│   │   ├── Insertion.java
+│   │   ├── Merge.java
+│   │   ├── Quick.java
+│   │   ├── Selection.java
+│   │   └── Shell.java
+│   ├── stack
+│   │   ├── algorithms
+│   │   │   └── SortAStackUsingRecursion.java
+│   │   ├── datastructures
+│   │   │   ├── ArrayStack.java
+│   │   │   ├── FixedCapacityStack.java
+│   │   │   ├── LinkedStack.java
+│   │   │   └── Stack.java
+│   │   └── exercises
+│   │       ├── Evaluate.java
+│   │       ├── Parentheses.java
+│   │       ├── Parentheses.txt
+│   │       ├── StackDemo1.java
+│   │       ├── StackDemo2.java
+│   │       ├── StackDemo2.txt
+│   │       └── StackDemo3.java
+│   ├── symbolTable
+│   │   ├── datastructures
+│   │   │   ├── BinarySearchST.java
+│   │   │   ├── SequentialSearchST.java
+│   │   │   └── ST.java
+│   │   └── exercises
+│   │       └── symbolTable_exercises
+│   │           ├── ArrayST.java
+│   │           ├── BinarySearchSortedST.java
+│   │           ├── BinarySearchTreeST.java
+│   │           ├── BST.java
+│   │           ├── FrequencyCounter.java
+│   │           ├── OrderedSequentialSearchST.java
+│   │           ├── ScoreRankPrinter.java
+│   │           ├── scoreRank.txt
+│   │           ├── SortedST.java
+│   │           ├── tale.txt
+│   │           └── tinyTale.txt
+│   └── uf
+│       ├── datastructures
+│       │   ├── UF_API.java
+│       │   └── UF.java
+│       └── exercises
+│           ├── quick-find_for_wqf.txt
+│           ├── QuickFindUF.java
+│           ├── QuickUnionUF.java
+│           ├── UF_test.txt
+│           └── WeightedQuickUnion.java
+├── images
+│   └── sorting
+│       ├── bs_insertionSort_1.png
+│       ├── bs_selectionSort_1.png
+│       ├── bs_shellSort_1.png
+│       ├── mergeSort_buSort_1.png
+│       ├── mergeSort_merge.png
+│       ├── mergeSort_ubSort_1.png
+│       ├── mergeSort_ubSort_2.png
+│       ├── mergeSort_ubSort_3.png
+│       ├── quickSort_partition_1.png
+│       ├── quickSort_partition_2.png
+│       └── README.md
+├── notes
+│   ├── searching
+│   │   └── basical-searching-algorithms.md
+│   ├── sorting
+│   │   ├── basical-sorting-algs.md
+│   │   ├── mergeSort.md
+│   │   └── quickSort.md
+│   └── uf
+│       └── union-find.md
+└── README.md
+
+35 directories, 103 files
+```
+
 ## Table of contents
 
 - [Bag](https://github.com/rovo98/ds-and-algs#bag)
