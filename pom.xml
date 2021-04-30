@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
+
+    <name>ds-and-algs: Parent</name>
+    <groupId>com.rovo98</groupId>
+    <artifactId>ds-and-algs_parent</artifactId>
+    <version>1.0</version>
+
+    <developers>
+        <developer>
+            <name>rovo98 (senbin lin)</name>
+            <email>rovo98@163.com</email>
+            <roles>
+                <role>maintainer</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <modules>
+        <module>java</module>
+        <module>scala</module>
+    </modules>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <scala.version>2.13.5</scala.version>
+        <main.basedir>${project.basedir}</main.basedir>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- system scope dep from book algs4 -->
+            <dependency>
+                <groupId>edu.princeton.cs</groupId>
+                <artifactId>algs4</artifactId>
+                <version>downloaded</version>
+                <scope>system</scope>
+                <systemPath>${main.basedir}/ext_libs/algs4.jar</systemPath>
+            </dependency>
+
+            <dependency>
+                <groupId>org.scala-lang</groupId>
+                <artifactId>scala-compiler</artifactId>
+                <version>${scala.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.scala-lang</groupId>
+                <artifactId>scala-reflect</artifactId>
+                <version>${scala.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.scala-lang</groupId>
+                <artifactId>scala-library</artifactId>
+                <version>${scala.version}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>net.alchim31.maven</groupId>
+                    <artifactId>scala-maven-plugin</artifactId>
+                    <version>4.3.0</version>
+                    <executions>
+                        <execution>
+                            <id>eclipse-add-source</id>
+                            <goals>
+                                <goal>add-source</goal>
+                            </goals>
+                        </execution>
+                        <execution>
+                            <id>scala-compile-first</id>
+                            <goals>
+                                <goal>compile</goal>
+                            </goals>
+                        </execution>
+                        <execution>
+                            <id>scala-test-compile-first</id>
+                            <goals>
+                                <goal>testCompile</goal>
+                            </goals>
+                        </execution>
+                        <execution>
+                            <id>attach-scaladocs</id>
+                            <phase>verify</phase>
+                            <goals>
+                                <goal>doc-jar</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                    <configuration>
+                        <scalaVersion>${scala.version}</scalaVersion>
+                        <checkMultipleScalaVersions>true</checkMultipleScalaVersions>
+                        <failOnMultipleScalaVersions>true</failOnMultipleScalaVersions>
+                        <recompileMode>incremental</recompileMode>
+                        <args>
+                            <arg>-unchecked</arg>
+                            <arg>-deprecation</arg>
+                            <arg>-feature</arg>
+                            <arg>-explaintypes</arg>
+                            <arg>-target:jvm-1.8</arg>
+                            <arg>-Xfatal-warnings</arg>
+                            <arg>-Ywarn-unused:imports</arg>
+                            <arg>-P:silencer:globalFilters=.*deprecated.*</arg>
+                        </args>
+                        <jvmArgs>
+                            <jvmArg>-Xms1024m</jvmArg>
+                            <jvmArg>-Xmx1024m</jvmArg>
+                            <jvmArg>-XX:ReservedCodeCacheSize=${CodeCacheSize}</jvmArg>
+                        </jvmArgs>
+                        <javacArgs>
+                            <javacArg>-source</javacArg>
+                            <javacArg>${java.version}</javacArg>
+                            <javacArg>-target</javacArg>
+                            <javacArg>${java.version}</javacArg>
+                            <javacArg>-Xlint:all,-serial,-path,-try</javacArg>
+                        </javacArgs>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.8.1</version>
+                    <configuration>
+                        <source>${java.version}</source>
+                        <target>${java.version}</target>
+                        <skipMain>true</skipMain> <!-- skip compile -->
+                        <skip>true</skip> <!-- skip testCompile -->
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+</project>
