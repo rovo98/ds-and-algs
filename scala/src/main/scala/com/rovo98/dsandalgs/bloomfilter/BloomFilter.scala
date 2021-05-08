@@ -1,6 +1,6 @@
 package com.rovo98.dsandalgs.bloomfilter
 
-import com.rovo98.dsandalgs.hash.HashFunction
+import com.rovo98.dsandalgs.function.hash.HashFunction
 
 /**
  * @author rovo98

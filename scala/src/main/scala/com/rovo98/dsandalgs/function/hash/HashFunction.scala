@@ -1,4 +1,4 @@
-package com.rovo98.dsandalgs.hash
+package com.rovo98.dsandalgs.function.hash
 
 trait HashFunction[T] {
   /**
