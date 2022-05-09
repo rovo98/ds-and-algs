@@ -16,7 +16,7 @@ class ClassicalBloomFilter[CT](private val hashFunctions: Array[HashFunction[CT]
                               ) extends BloomFilter[CT] {
   private val _bitVector: Array[Int] = new Array[Int](m)
 
-  def this(set: Array[CT], hashFunctions: Array[HashFunction[CT]], m: Int) {
+  def this(set: Array[CT], hashFunctions: Array[HashFunction[CT]], m: Int) = {
     this(hashFunctions, m)
     // initialize the bloom filter.
     for (i <- set.indices) {

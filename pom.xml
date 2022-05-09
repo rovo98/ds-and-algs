@@ -28,7 +28,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
-        <scala.version>2.13.5</scala.version>
+        <scala.version>2.13.6</scala.version>
         <main.basedir>${project.basedir}</main.basedir>
     </properties>
 
