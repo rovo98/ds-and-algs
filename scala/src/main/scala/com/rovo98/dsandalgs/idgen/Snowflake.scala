@@ -10,7 +10,7 @@ package com.rovo98.dsandalgs.idgen
  * @param workerId     id of the worker node (0-31)
  * @param dataCenterId id of the date center (0-31)
  */
-class Snowflake(var workerId: Long, var dataCenterId: Long) {
+class Snowflake(val workerId: Long, val dataCenterId: Long) {
   // system start timestamp (UTC 2017-06-28 00:00:00)
   private val startTime: Long = 1498608000000L
 
