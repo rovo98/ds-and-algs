@@ -72,7 +72,7 @@ class Snowflake(var workerId: Long, var dataCenterId: Long) {
       ((timestamp - startTime) << timestampLeftShift) |
         (dataCenterId << dataCenterIdLeftShift) |
         (workerId << workerIdLeftShift) |
-        sequence
+        sequence & (~(1L << 63)) // always set first bit as 0.
     }
   }
 
